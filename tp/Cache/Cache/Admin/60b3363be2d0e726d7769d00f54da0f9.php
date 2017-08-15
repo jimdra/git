@@ -1,0 +1,117 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><?php if($land_info['title']): echo ($land_info['title']); else: echo ($game_info['game_name']); endif; ?></title>
+	<meta content="width=device-width,user-scalable=no" name="viewport">
+	<meta name="HandheldFriendly" content="true">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<meta name="format-detection" content="telephone=no">
+	<script type="text/javascript" src="https://cdn.qitiangame.com/landing/js/zepto.min.js"></script>
+	<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+'" />')
+			var fz = document.documentElement.clientWidth / 10;
+			document.getElementsByTagName('html')[0].style.fontSize = fz + 'px';
+	</script>
+	<style>
+	body, p, div, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form { margin: 0px; padding: 0px; list-style: outside none none; vertical-align: middle; }
+	body{max-width: 10.0rem;margin:0 auto;background:#020D4B;-webkit-tap-highlight-color:rgba(0,0,0,0);overflow-x: hidden;}
+		.warm{width:10.0rem;position: relative;}
+		#body{padding-top:18%}
+		#allLink{display: none;position: absolute;z-index: 999;}
+		.warm img{width:100%;position: absolute;}
+		#link2{position: absolute;display: block;width: 100%;z-index: 2;height:11.580645rem;top:1.935484rem;}
+		#link3{width:4.451613rem;height:1.129032rem;top:21.574194rem;;left:2.774194rem;display: block;position: absolute;}
+		#link4{width: 4.83871rem;height: 2.177419rem;top:35.483871rem;left: 2.693548rem;position: absolute;display: block;}
+		#info{position: absolute;color: #fff;z-index: 999;height: 12%;font-size:0.403226rem;text-align: center;width: 100%;background:#020D4B;}
+	</style>
+</head>
+<body>
+	<?php if($land_info["click_type"] == 2): ?><a id="allLink"></a><?php endif; ?>
+	<div class="warm">
+		<a id="link1">
+			<img src="<?php echo ($material[0]['material_thumb']); ?>" style="max-width:10.0rem;float:left;margin-top:-1px;position:fixed;z-index:998;">
+		</a>
+		<img src="<?php echo ($material[1]['material_thumb']); ?>" id="body">
+		<a id="link2"></a>
+		<a id="link3"></a>
+		<a id="link4"></a>
+	</div>
+	<p id="info"><?php echo ($land_info['bottom_info']); ?></p>
+</body>
+</html>
+<?php echo ($land_info['stat_js']); ?>
+<script>
+	var land_id = "<?php echo ($land_info['id']); ?>";
+	var click_type = "<?php echo ($land_info['click_type']); ?>";
+	var url = 'https://admin.leishenhuyu.com';
+	window.onload = function(){
+		var APK = "<?php echo ($land_info['android_down_url']); ?>";		//Android下载链接
+		var IOS = "<?php echo ($land_info['ios_down_url']); ?>";		//IOS下载链接
+		var TIME = "<?php echo ($land_info['auto_jump']); ?>";			//延时秒数
+		function handle(){
+			this.a = document.getElementsByTagName('a');
+			this.allLink = document.getElementById('allLink');
+			this.info = document.getElementById('info');
+		} 
+		handle.prototype.init = function(){
+			if (click_type==2) {
+			this.allClient();  //全屏点击
+			}
+			this.clickLink(APK,IOS);
+			this.log(land_id,1);
+			if (TIME!=0) {
+			this.setTime(APK,IOS,TIME+'000');
+			}
+			this.info.style.top = document.body.scrollHeight +'px';
+		}
+		handle.prototype.allClient = function(){ 
+			this.allLink.style.display = 'block';
+			this.allLink.style.width = document.body.clientWidth+'px';
+			this.allLink.style.height = document.body.scrollHeight +'px';
+		}
+		handle.prototype.clickLink = function(apk,ios){
+			var _this = this;
+			for(var i=0;i<this.a.length;i++){
+				this.a[i].onclick = function()
+				{
+					_this.log(land_id,2);
+					if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {  //判断iPhone|iPad|iPod|iOS
+					    window.location.href =ios;   //iphone的下载链接
+					} else if (/(Android)/i.test(navigator.userAgent)) {   //判断Android
+					    window.location.href =apk;   //Android的下载链接
+					};
+				}
+			}
+		}
+		handle.prototype.setTime = function(apk,ios,settime){
+		var _this = this;
+			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {  //判断iPhone|iPad|iPod|iOS
+				setTimeout(function(){
+					_this.log(land_id,2);
+					 window.location.href =ios;   //iphone的下载链接
+				},settime)
+			   
+			} else if (/(Android)/i.test(navigator.userAgent)) {   //判断Android
+				setTimeout(function(){
+					_this.log(land_id,2);	
+					  window.location.href =apk;   //Android的下载链接
+				},settime)
+			};
+		}
+		handle.prototype.log = function(land_id,type_id){
+			$.ajax({
+				type: "GET",
+				url: url+'/index.php?m=Api&c=Land&a=land_log&land_id='+land_id+'&type='+type_id,
+				dataType: "jsonp",
+				jsonp: "callback",
+				success: function(data){
+					
+				}
+			});
+		}
+		var FN = new handle();
+		FN.init();
+	}
+</script>

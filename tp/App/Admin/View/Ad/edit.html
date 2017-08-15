@@ -1,0 +1,192 @@
+<include file="Public:header" />
+<!--编辑/添加站点-->
+<div class="pad_lr_10">
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <form id="info_form" action="{:U("Ad/$action_name")}" method="post">
+                <input type="hidden" name="menuid" value="{$menuid}" />
+                <table width="100%" class="table_form">
+                    <tr>
+                        <th width="80">{:L('game_name')} :</th>
+                        <td>
+                            <select style="clear:both;position: relative;width: 150px" name="game_id" id="J_game_id" <if condition="$info['game_id']">disabled</if>>
+                                <option value="0">{:L('chose_game')}</option>
+                                <volist name="game_list" id="val">
+                                    <option value="{$val.game_id}" <if condition="$val['game_id'] eq $info['game_id']">selected="selected"</if>>{$val.game_name}</option>
+                                </volist>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('channel')} :</th>
+                        <td>
+                            <select style="clear:both;position: relative;width: 150px" name="game_id" id="J_game_id" <if condition="$info['game_id']">disabled</if>>
+                                <option value="0">{:L('chose_game')}</option>
+                                <volist name="game_list" id="val">
+                                    <option value="{$val.game_id}" <if condition="$val['game_id'] eq $info['game_id']">selected="selected"</if>>{$val.game_name}</option>
+                                </volist>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('title')} :</th>
+                        <td><input type="text" name="title" class="input-text" id="J_title" value="{$info.title}" size="30"></td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('theme')} :</th>
+                        <td>
+                            <select style="clear:both;position: relative;width: 150px" name="theme" onchange="select_theme(this.value)" id="J_theme">
+                                <option value="0">{:L('chose_theme')}</option>
+                                <volist name="theme_list" id="val">
+                                    <option value="{$val.theme_id}" <if condition="$val['theme_id'] eq $info['theme']">selected="selected"</if>>{$val.theme_name}</option>
+                                </volist>
+                            </select>
+                            <input type="text" name="material" id="material" class="input-text" value="" onblur="set_material(this.value)" size="5" style="display: none;">
+                        </td>
+                    </tr>
+                    <tr id='images' style="display: none;">
+                        <th width="80">{:L('material')} :</th>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('ios_down_url')} :</th>
+                        <td><input type="text" name="ios_down_url" class="input-text" id="J_ios_down_url" value="{$info.ios_down_url}" size="30"></td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('android_down_url')} :</th>
+                        <td><input type="text" name="android_down_url" class="input-text" id="J_android_down_url" value="{$info.android_down_url}" size="30"></td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('bottom_info')} :</th>
+                        <td><input type="text" name="bottom_info" class="input-text" id="J_bottom_info" value="{$info.bottom_info}" size="30"></td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('click_type')} :</th>
+                        <td>
+                            <select style="clear:both;position: relative;width: 150px" name="click_type">
+                                <option value="1" <if condition="$info['click_type'] eq 1">selected="selected"</if>>{:L('button')}</option>
+                                <option value="2" <if condition="$info['click_type'] eq 2">selected="selected"</if>>{:L('all_link')}</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('auto_jump')} :</th>
+                        <td>
+                            <select style="clear:both;position: relative;width: 150px" name="auto_jump">
+                                <option value="0" <if condition="$info['auto_jump'] eq 0">selected="selected"</if>>{:L('no_auto')}</option>
+                                <option value="3" <if condition="$info['auto_jump'] eq 3">selected="selected"</if>>3s</option>
+                                <option value="5" <if condition="$info['auto_jump'] eq 5">selected="selected"</if>>5s</option>
+                                <option value="10" <if condition="$info['auto_jump'] eq 10">selected="selected"</if>>10s</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('stat_js')} :</th>
+                        <td><textarea id="stat_js" name="stat_js" rows='8' cols="30">{$info.stat_js}</textarea></td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('batch')} :</th>
+                        <td>
+                            <input type="text" name="batch" class="input-text" id="J_batch" value="{$info.batch}" <if condition="$info['id']">disabled</if> size="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('host')} :</th>
+                        <td>
+                            <select style="clear:both;position: relative;width: 150px" name="host">
+                                <option value="leishenhuyu.com" <if condition="$info['host'] eq 'leishenhuyu.com'">selected="selected"</if>>leishenhuyu.com</option>
+                                <option value="qitiangame.com" <if condition="$info['host'] eq 'qitiangame.com'">selected="selected"</if>>qitiangame.com</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input type="submit" class="btn" value="{:L('submit')}">
+                        </td>
+                    </tr>
+                </table>
+                <input type="hidden" name="id" value="{$info.id}" />
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+        <volist name=":L('js_land')" id="val">
+        lang.{$key} = "{$val}";
+        </volist>
+        $(function(){
+            $.formValidator.initConfig({formid:"info_form",autotip:true});
+            $("#J_game_id").formValidator({ onshow:lang.game_id, onfocus:lang.game_id}).inputValidator({ min:1, onerror:lang.game_id});
+            $("#J_theme").formValidator({ onshow:lang.theme, onfocus:lang.theme}).inputValidator({ min:1, onerror:lang.theme});
+            $("#J_land_title").formValidator({ onshow:lang.land_title, onfocus:lang.land_title}).inputValidator({ min:2, max:200, onerror:lang.land_title});
+            
+            var theme = "{$info.theme}";
+            var land_id = "{$info.id}";
+            if (theme) {
+                select_theme(theme,land_id);
+            }
+        });
+        
+        function select_theme(theme,land_id=0) {
+            if (theme!=0) {
+                $.ajax({
+                    type: "POST",
+                    url: "{:U('Theme/getTheme')}",
+                    data: "theme_id="+theme+"&land_id="+land_id,
+                    success: function(result){
+                        if (result.status==2) {
+                            $('#material').val(result.msg).show();
+                            $('#images').hide();
+                            if (land_id!=0) {
+                                var material = "{$info.material}";
+                                set_material(material,land_id);
+                            }
+                        } else {
+                            $('#material').hide();
+                            $('#images td').empty().append(result.data);
+                            $('#images').show();
+                        }
+                    }
+                });
+            } else {
+                $('#material').hide();
+                $('#images').hide();
+            }
+        }
+        
+        function set_material(material_num,land_id=0) {
+            if (material_num!=0) {
+                $.ajax({
+                    type: "POST",
+                    url: "{:U('Theme/getTheme')}",
+                    data: "material_num="+material_num+"&land_id="+land_id,
+                    success: function(result){
+                        $('#images td').empty().append(result.data);
+                        $('#images').show();
+                    }
+                });
+            }
+        }
+        
+        function getMaterial(material_id,id) {
+            if (material_id!='') {
+                $.ajax({
+                    type: "POST",
+                    url: "{:U('Material/getMaterial')}",
+                    data: "material_id="+material_id,
+                    success: function(result){
+                        $('#material_'+id).attr('src',result.data);
+                    }
+                });
+            } else {
+                $('#material_'+id).attr('src','');
+            }
+        }
+
+</script>
+<include file="Public:footer" />
+</body>
+</html>

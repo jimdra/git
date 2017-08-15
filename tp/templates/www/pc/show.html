@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{$seo_title}</title>
+        <meta name="keywords" content="{$seo_keywords}">
+        <meta name="Description" content="{$seo_description}">
+        <link rel="stylesheet" href="/css/content.css">
+        <script src="/js/jquery.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <include file="./templates/www/pc/header.html" />
+        <div class="container con">
+            <div class="location">
+                <i class="ge"></i><a href="/">首页</a> > <a href="/news/">新闻资讯</a> > 正文
+            </div>
+            <div class="article">
+                <h1 class="arctiletitle">{$data.title}</h1>
+                <p class="authoer">作者：<span>admin</span>  时间：<span>{$data.addtime|date="Y-m-d",###}</span></p>
+                <div class="arcticlecon">
+                    {$data.content}
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <!--底部信息-->
+        <include file="./templates/www/pc/footer.html" />
+    </body>
+</html>
+<script>
+    window.onload = function ()
+    {
+        var oEwm = document.getElementById('ewm');
+        var oWechat = document.getElementsByClassName('wechat')[0];
+        oWechat.onmouseover = function ()
+        {
+            oEwm.style.display = "block";
+        }
+        oWechat.onmouseout = function ()
+        {
+            oEwm.style.display = "none";
+        }
+
+    }
+</script>

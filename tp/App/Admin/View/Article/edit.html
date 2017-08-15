@@ -1,0 +1,136 @@
+<include file="Public:header" />
+<!--编辑/添加站点-->
+<div class="pad_lr_10">
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <form id="info_form" action="<if condition="$action_name=='add'">{:U('Article/add')}<else />{:U('Article/edit')}</if>" method="post">
+                <table width="100%" class="table_form">
+                    <tr>
+                        <th width="80">{:L('site')} :</th>
+                        <td>
+                            <select style="clear:both;position: relative;width: 150px" name="site_id" id="J_site_id" onchange="select_cat(this.value)">
+                                <option value="0">{:L('chose_site')}</option>
+                                <volist name="site_list" id="val">
+                                    <option value="{$val.site_id}" <if condition="$val['site_id'] eq $info['site_id']">selected="selected"</if>>{$val.site_name}</option>
+                                </volist>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('cate')} :</th>
+                        <td>
+                            <select style="clear:both;position: relative;width: 150px" name="cat_id" id="J_cat_id">
+                                <option value="0">{:L('chose_cate')}</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('title')} :</th>
+                        <td><input type="text" name="title" class="input-text" id="J_title" value="{$info.title}" size="60"></td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('thumb')} :</th>
+                        <td>
+                            <input type="text" class="input-text " name="thumb" id="thumb" value="{$info.thumb}" size="30">
+                            <input type="button" class="btn" value="{:L('uploadfiles')}" onclick="javascript:swfupload('pic_uploadfile','thumb','文件上传',1,0,0,1,'jpg,jpeg,gif,png',5,up_image)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('show')} :</th>
+                        <td>
+                            <input type="checkbox" name="show[]" class="check_style" value="1" <if condition="!$info">checked="checked"<else/><in name="pc" value="$info.show">checked="checked"</in></if>> &nbsp;{:L('pc')}&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="show[]" class="check_style" value="2" <if condition="!$info">checked="checked"<else/><in name="wap" value="$info.show">checked="checked"</in></if>> &nbsp;{:L('web')}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>{:L('keyword')} :</th>
+                        <td><input type="text" name="keyword" class="input-text" value="{$info.keyword}" ></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('description')} :</th>
+                        <td><textarea class="" name="description" rows="4" cols="55">{$info.description}</textarea></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('content')} :</th>
+                        <td><textarea id="content" name="content" style="width:700px;height:300px;">{$info.content}</textarea></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('addtime')} :</th>
+                        <td><input class="Wdate input-text"  name="addtime" type="text" id="addtime" size="25" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" value="<if condition="$info">{$info.addtime|date="Y-m-d H:i:s",###}<else />{$time}</if>" /></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('fromlink')} :</th>
+                        <td><input type="text" name="fromlink" class="input-text" value="{$info.fromlink}" ></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('status')} :</th>
+                        <td>
+                    <input type="radio" name="status" class="radio_style" value="1" <if condition="!$info || $info.status eq 1"> checked="checked"</if>> &nbsp;{:L('yes')}&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="status" class="radio_style" value="0" <if condition="$info && $info.status eq 0"> checked="checked"</if>> &nbsp;{:L('no')}
+                    </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input type="submit" class="btn" value="{:L('submit')}">
+                        </td>
+                    </tr>
+                </table>
+                <input type="hidden" name="menuid" value="{$menuid}" />
+                <input type="hidden" name="id" value="{$info.id}" />
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/MyDate/WdatePicker.js"></script>
+<script charset="utf-8" src="__PUBLIC__/js/Kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/js/Kindeditor/lang/zh_CN.js"></script>
+<script>
+        var upurl = APP+'?m=Admin&c=Attachment&a=index&isadmin=1&more=0&isthumb=0&file_limit=20&file_types=jpg,jpeg,gif,png&file_size=5';
+        var upImgUrl = APP+'?m=Admin&c=Attachment&a=index&isadmin=1&more=0&isthumb=0&file_limit=1&file_types=jpg,jpeg,gif,png&file_size=5';
+        var upFlashUrl = APP+'?m=Admin&c=Attachment&a=index&isadmin=1&more=0&isthumb=0&file_limit=1&file_types=swf,flv&file_size=5';
+        var upMediaUrl = APP+'?m=Admin&c=Attachment&a=index&isadmin=1&more=0&isthumb=0&file_limit=1&file_types=mpg,wmv,avi,wma,mp3,mid,asf,rm,rmvb,wav,wma,mp4&file_size=5';
+        KindEditor.ready(function(K) {
+            K.create('#content', {
+			cssPath : '__PUBLIC__/js/Kindeditor/plugins/code/prettify.css',
+			fileManagerJson: upurl,
+			editorid:'content',
+			upImgUrl:upImgUrl,
+			upFlashUrl:upFlashUrl,
+			upMediaUrl:upMediaUrl,
+			allowFileManager : true
+
+		})
+            });
+</script>
+<script>
+        <volist name=":L('js_article')" id="val">
+        lang.{$key} = "{$val}";
+        </volist>
+        $(function(){
+            $.formValidator.initConfig({formid:"info_form",autotip:true});
+            $("#J_site_id").formValidator({ onshow:lang.site, onfocus:lang.site}).inputValidator({ min:1, onerror:lang.site});
+            $("#J_cat_id").formValidator({ onshow:lang.cate, onfocus:lang.cate}).inputValidator({ min:1, onerror:lang.cate});
+            $("#J_title").formValidator({ onshow:lang.title, onfocus:lang.title}).inputValidator({ min:2, max:200, onerror:lang.allow_title});
+
+            var site_id = $("#J_site_id").val();
+            var cat_id = "{$info.cat_id}";
+            if (site_id) {
+                select_cat(site_id, cat_id);
+            }
+        });
+        function select_cat(site_id,cat_id) {
+            $.ajax({
+               type: "POST",
+               url: "{:U('Article/getCate')}",
+               data: "site_id="+site_id+"&cat_id="+cat_id,
+               success: function(result){
+                   str = "<option value='0'>{:L('chose_cate')}</option>";
+                    $('#J_cat_id').empty().append(str+result.data);
+               }
+            });
+        }
+</script>
+<include file="Public:footer" />
+</body>
+</html>

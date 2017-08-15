@@ -1,0 +1,86 @@
+<include file="Public:header" />
+<script src="__PUBLIC__/js/MyDate/WdatePicker.js"></script>
+<div class="pad_lr_10">
+
+    <form name="searchform" id="search_form">
+        <table width="100%" cellspacing="0" class="search_form">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="explain_col">
+                            <input name="p_start" id="p_start"  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd' })" value="<php> echo date('Y-m-d',strtotime('-1 day')); </php>" class="Wdate" /> -
+                            <input name="p_end" id="p_end" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd' })" value="<php> echo date('Y-m-d',time()); </php>" class="Wdate" />
+                            <select id="game_id" name="game_id">
+                                <option value="0">{:L('game_name')}</option>
+                                <volist name="game_list" id="vo">
+                                    <option value="{$vo.game_id}" <if condition="$vo['game_id'] eq $search['game_id']">selected="selected"</if>>{$vo.game_name}</option>
+                                </volist>
+                            </select>
+                            <select id="channel_id" name="channel_id">
+                                <option value="0">{:L('channel')}</option>
+                                <volist name="channel_list" id="vo">
+                                    <option value="{$vo.channel_id}" <if condition="$vo['channel_id'] eq $search['channel_id']">selected="selected"</if>>{$vo.channel_name}</option>
+                                </volist>
+                            </select>
+                            <input type="button" onclick="dofind();" class="btn" value="{:L('search')}" />
+                            <a class="btn J_confirmurl" href="javascript:void(0);" data-uri="{:U('Land/export')}" data-title="{:L('export')}" data-id="export" data-width="450" data-height="200" data-msg="确认导出吗">{:L('export')}</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div class="J_tablelist table_list">
+        <table width="100%" cellspacing="0" id="scl_tt2" style="height:500px;">
+            <thead>
+                <tr>
+                    <th data-options="field:'stat_date',width:100,align:'center'">{:L('stat_time')}</th>
+                    <th data-options="field:'land_url',width:150,align:'center'">{:L('land_url')}</th>
+                    <th data-options="field:'game_name',width:80,align:'center'">{:L('game_name')}</th>
+                    <th data-options="field:'land_title',width:100,align:'center'">{:L('land_title')}</th>
+                    <th data-options="field:'visit_num',width:50,align:'center'">{:L('visit_num')}</th>
+                    <th data-options="field:'visit_num_ip',width:50,align:'center'">{:L('visit_num_ip')}</th>
+                    <th data-options="field:'down_num',width:50,align:'center'">{:L('down_num')}</th>
+                    <th data-options="field:'down_num_ip',width:50,align:'center'">{:L('down_num_ip')}</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="btn_wrap_fixed">
+    </div>
+</div>
+<include file="Public:footer" />
+<script src="__PUBLIC__/js/option-change.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#scl_tt2').datagrid({
+            singleSelect:true,
+            nowrap:true,
+            url:'{:U("Land/stat")}',
+            fitColumns:true,
+            nowrap:true,
+            pagination:true,  //分页
+            pageSize: 20,
+            pageList: [20,30,50]
+        });
+});
+
+function dofind() {
+        var p_start = $('#p_start').val(),
+        p_end = $('#p_end').val(),
+        game_id = $('#game_id').val(),
+        channel_id = $('#channel_id').val();
+        $('#scl_tt2').datagrid("reload", {
+            p_start : p_start,
+            p_end : p_end,
+            game_id : game_id,
+            channel_id : channel_id
+        });
+}
+
+function doexport() {
+    
+}
+</script>
+</body>
+</html>

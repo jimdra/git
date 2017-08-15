@@ -1,0 +1,57 @@
+<include file="Public:header" />
+<style>
+
+    .table-list {margin:20px 10px;}
+</style>
+
+<div class="pad_lr_10">
+    <div class="table-list picbox">
+        <table width="100%" cellspacing="0">
+
+            <form method="get" name="myform">
+                <input type="hidden" name="m" value="Admin">
+                <input type="hidden" name="c" value="{$controller_name}">
+                <input type="hidden" name="a" value="do{$action_name}">
+                <input type="hidden" name="iscreatehtml" value="1">
+
+                <tr>
+                    <th align="center" width="150">{:L(select_site)}</th>
+                    <th align="center" width="188">{:L(chose_category)}</th>
+                    <th align="center" width="594">{:L(chose_manage)}</th>
+                </tr>
+
+
+                <tr align="center">
+                    <td valign="top">
+                        <select name="site_id" id="site_id" size="2" style="margin:10px;height:300px;width:130px;" onchange="change_site(this.value)">
+                            <option value='' selected>{:L(select_site)}</option>
+                            <volist name="site_list" id="vo">
+                                <option value='{$vo.site_id}' <if condition="$site_id eq $vo['site_id']">selected</if>>{$vo.site_name}</option>
+                            </volist>
+                        </select>
+                    </td>
+
+                    <td valign="top">
+                        <select name='catids[]' id='catids'  multiple="multiple"  style="height:200px;margin:10px;width:100px;" title="{:L(category_alt)}">
+                            <option value='0' selected>{:L(category_select)}</option>
+		{$select_categorys}
+                        </select>
+                    </td>
+
+                    <td><div style="margin:9px;"><font color="red">{:L(create_pagesize_1)} <input type="text" name="pagesize" value="10" size="4"> {:L(create_pagesize_2)}</font></div></td>
+
+
+                    <td><input type="submit" style="margin:20px;" name="dosubmit" value="{:L($action_name)}" class="btn" ></td>
+                </tr>
+
+            </form>
+        </table>
+
+    </div>
+</div>
+<script>
+    function change_site(site_id){
+        window.location.href = "{:U('Createhtml/'.$action_name)}&site_id="+site_id+"&menuid="+{$menuid};
+    }
+
+</script>

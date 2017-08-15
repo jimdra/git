@@ -1,0 +1,124 @@
+<div class="dialog_content">
+    <form id="info_form" action="{:U("Wechat/$action_name")}" method="post">
+        <table width="100%" class="table_form">
+            <tr>
+                <th width="80">{:L('site_name')} :</th>
+                <td>
+                    <select style="clear:both;position: relative;width: 150px" name="site_id" id="J_site_id" <if condition="$info">disabled</if>>
+                        <option value="0">{:L('chose_site')}</option>
+                        <volist name="site_list" id="val">
+                            <option value="{$val.site_id}" <if condition="$val['site_id'] eq $info['site_id']">selected="selected"</if>>{$val.site_name}</option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('menu_name')} :</th>
+                <td><input type="text" name="menu_name" class="input-text" id="J_menu_name" value="{$info.menu_name}" ></td>
+            </tr>
+            <tr>
+                <th>{:L('menu_level')} :</th>
+                <td>
+                    <select style="clear:both;position: relative;width: 150px" name="level" id="level" onchange="is_parent(this.value)" class="level">
+                        <option value="1" <if condition="$info['parent_id'] eq 0">selected="selected"</if>>{:L('top_menu')}</option>
+                        <option value="2" <if condition="$info['parent_id'] neq 0">selected="selected"</if>>{:L('sub_menu')}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="parent" style="display: none">
+                <th>{:L('menu_parent')} :</th>
+                <td>
+                    <select style="clear:both;position: relative;width: 150px" name="parent_id" id="J_parent_id">
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('menu_type')} :</th>
+                <td>
+                    <select style="clear:both;position: relative;width: 150px" name="action">
+                        <option value="url" <if condition="$info['action'] eq 'url'">selected</if>>{:L('link')}</option>
+                        <option value="click" <if condition="$info['action'] eq 'click'">selected</if>>{:L('click')}</option>
+                        <!--<option value="media" <if condition="$info['action'] eq 'media'">selected</if>>{:L('news')}</option>-->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('menu_param')} :</th>
+                <td>
+                    <input class="input-text" type="text" name="action_param" value="{$info.action_param}" size="27"> <font color="red">若是url用http开头</font>
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('menu_status')} :</th>
+                <td>
+                    <select style="clear:both;position: relative;width: 80px" name="status">
+                        <option value="1" <if condition="$info['status'] eq 1">selected</if>>{:L('open')}</option>
+                        <option value="0" <if condition="$info && $info['status'] eq 0">selected</if>>{:L('close')}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('menu_sort')} :</th>
+                <td><input type="text" name="sort" value="{$info.sort}" class="input-text"></td>
+            </tr>
+        </table>
+        <input type="hidden" name="id" value="{$info.id}" />
+    </form>
+</div>
+<script>
+        <volist name=":L('js_wechat')" id="val">
+        lang.{$key} = "{$val}";
+        </volist>
+        $(function(){
+            $.formValidator.initConfig({formid:"info_form",autotip:true});
+            $("#J_site_id").formValidator({ onshow:lang.site_name, onfocus:lang.site_name}).inputValidator({ min:1, onerror:lang.site_name});
+            $("#J_menu_name").formValidator({ onshow:lang.menu_name, onfocus:lang.menu_name}).inputValidator({ min:2, onerror:lang.menu_name});
+
+            $('#info_form').ajaxForm({success:complate,dataType:'json'});
+            function complate(result){
+                if(result.status == 1){
+                    $.dialog.get('menu_'+result.dialog).close();
+                    $.TP.tip({content:result.msg});
+                    window.location.reload();
+                } else {
+                    $.TP.tip({content:result.msg, icon:'alert'});
+                }
+            }
+            var level = $('#level').val();
+            var parent_id = "{$info.parent_id}";
+            if (level==2) {
+                is_parent(level,parent_id);
+            }
+        });
+
+        function is_parent(val,parent_id) {
+            var site_id = $('#J_site_id').val();
+            $.ajax({
+                type: "GET",
+                url: "{:U('Wechat/getTopMenu')}",
+                data: {site_id:site_id},
+                dataType: "json",
+                success: function(data){
+                    $('#J_parent_id').empty();
+                    var chose = "{:L('chose')}";
+                    var html = '<option value="">'+ chose +'</option>';
+                    if (data.rows) {
+                        $.each(data.rows, function(commentIndex, comment){
+                            if (parent_id==comment['id']) {
+                                html += '<option value="'+comment['id']+'" selected>'+comment['menu_name']+'</option>';
+                            } else {
+                                html += '<option value="'+comment['id']+'">'+comment['menu_name']+'</option>';
+                            }
+                        });
+                    }
+                    $('#J_parent_id').html(html);
+                }
+            });
+            if (val == 2) {
+                $('.parent').show();
+            } else {
+                $('.parent').hide();
+            }
+        }
+</script>

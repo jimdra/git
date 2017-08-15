@@ -1,0 +1,77 @@
+<include file="Public:header" />
+<!--编辑/添加站点-->
+<div class="pad_lr_10">
+    <table width="100%" cellspacing="0" class="search_form">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="explain_col">
+                        <!--<a href="{:U('Slide/index')}" style="float:right;">{:L(gobacklist)}</a>-->
+{$slide[name]}{:L('operations_manage')} : <a href="{:U('Slide/picmanage?slide_id='.$slide[id])}">{:L('picmanage')}</a>  |  <a href="{:U('Slide/addpic?slide_id='.$slide[id])}">{:L(add_pic)}</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <form id="info_form" action="{:U("Slide/$action_name")}" method="post">
+                  <input type="hidden" name="slide_id" value="{$slide['id']}" />
+                <table width="100%" class="table_form">
+                    <tr>
+                        <th width="80">{:L('title')} :</th>
+                        <td><input type="text" name="title" class="input-text" id="J_title" value="{$info.title}" size="30"></td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('icon')} :</th>
+                        <td>
+                            <input type="text" class="input-text " name="icon" id="icon" value="{$info.icon}" size="30">
+                            <input type="button" class="btn" value="{:L('uploadfiles')}" onclick="javascript:swfupload('pic_uploadfile','icon','文件上传',1,0,0,1,'jpg,jpeg,gif,png',5,up_image)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('thumb')} :</th>
+                        <td>
+                            <input type="text" class="input-text " name="thumb" id="thumb" value="{$info.thumb}" size="30">
+                            <input type="button" class="btn" value="{:L('uploadfiles')}" onclick="javascript:swfupload('pic_uploadfile','thumb','文件上传',1,0,0,1,'jpg,jpeg,gif,png',5,up_image)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('img')} :</th>
+                        <td>
+                            <input type="text" class="input-text " name="img" id="img" value="{$info.img}" size="30">
+                            <input type="button" class="btn" value="{:L('uploadfiles')}" onclick="javascript:swfupload('pic_uploadfile','img','文件上传',1,0,0,1,'jpg,jpeg,gif,png',5,up_image)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>{:L('description')} :</th>
+                        <td><textarea class="" name="description" rows="4" cols="55">{$info.description}</textarea></td>
+                    </tr>
+
+                    <tr>
+                        <th>{:L('link')} :</th>
+                        <td><input type="text" name="link" class="input-text" value="{$info.link}" size="40"></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('status')} :</th>
+                        <td>
+                            <input type="radio" name="status" class="radio_style" value="1" <if condition="!$info || $info.status eq 1"> checked="checked"</if>> &nbsp;{:L('yes')}&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="status" class="radio_style" value="0" <if condition="$info && $info.status eq 0"> checked="checked"</if>> &nbsp;{:L('no')}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input type="submit" class="btn" value="{:L('submit')}">
+                        </td>
+                    </tr>
+                </table>
+                <input type="hidden" name="id" value="{$info.id}" />
+            </form>
+        </div>
+    </div>
+</div>
+
+<include file="Public:footer" />
+</body>
+</html>

@@ -1,0 +1,80 @@
+<include file="Public:header" />
+<!--站点管理-->
+<div class="pad_lr_10">
+
+    <form name="searchform" method="get" >
+        <table width="100%" cellspacing="0" class="search_form">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="explain_col">
+                            <input type="hidden" name="m" value="Admin" />
+                            <input type="hidden" name="c" value="Material" />
+                            <input type="hidden" name="a" value="index" />
+                            <input type="hidden" name="menuid" value="{$menuid}" />
+                            <input name="keyword" type="text" class="input-text" size="15" value="{$Think.get.keyword}" />
+                            <select name="searchtype">
+                                <option value="material_id" <eq name="searchtype" value='material_id'>selected="selected"</eq>>{:L('material_id')}</option>
+                                <option value="material_name" <eq  name="search.searchtype" value='material_name'>selected="selected"</eq>>{:L('name')}</option>
+                            </select>
+                            <select id="game_id" name="game_id">
+                                <option value="0">{:L('game_name')}</option>
+                                <volist name="game_list" id="vo">
+                                    <option value="{$vo.game_id}" <if condition="$vo['game_id'] eq $search['game_id']">selected="selected"</if>>{$vo.game_name}</option>
+                                </volist>
+                            </select>
+                            <input type="submit" name="search" class="btn" value="{:L('search')}" />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <div class="J_tablelist table_list">
+                <table width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th width="40"><input type="checkbox" name="checkall" class="J_checkall"></th>
+                            <th width="40">{:L('material_id')}</th>
+                            <th>{:L('name')}</th>
+                            <th>{:L('thumb')}</th>
+                            <th>{:L('game_name')}</th>
+                            <th>{:L('type_name')}</th>
+                            <th>{:L('addtime')}</th>
+                            <th>{:L('adduser')}</th>
+                            <th width=100>{:L('operations_manage')}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="list" id="val" >
+                        <tr>
+                            <td align="center"><input type="checkbox" class="J_checkitem" value="{$val.material_id}"></td>
+                            <td align="center">{$val.material_id}</td>
+                            <td align="center">{$val.material_name}</td>
+                            <td align="center"><img src="{$val['material_thumb']}" style="max-height: 110px; max-width: 220px;"></td>
+                            <td align="center">{$val.game_name}</td>
+                            <td align="center">{$val.type_name}</td>
+                            <td align="center" style="overflow: hidden;">{$val.addtime|date='Y-m-d H:i:s',###}</td>
+                            <td align="center" style="overflow: hidden;">{$val.adduser}</td>
+                            <td align="center">
+                                <a href="{:U('Material/edit',array('material_id'=>$val['material_id'],'menuid'=>$menuid))}">{:L('edit')}</a> |
+                                <a href="javascript:;" class="J_confirmurl" data-uri="{:U('Material/delete', array('material_id'=>$val['material_id']))}" data-msg="{:sprintf(L('confirm_delete_one'),$val['material_name'])}">{:L('delete')}</a>
+                            </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="btn_wrap_fixed">
+        <label class="select_all mr10"><input type="checkbox" name="checkall" class="J_checkall">{:L('select_all')}/{:L('cancel')}</label>
+        <input type="button" class="btn" data-tdtype="batch_action" data-acttype="ajax" data-uri="{:U('Material/delete')}" data-name="material_id" data-msg="{:L('confirm_delete')}" value="{:L('delete')}" />
+        <div id="pages">{$page}</div>
+    </div>
+</div>
+<include file="Public:footer" />
+</body>
+</html>

@@ -1,0 +1,78 @@
+<include file="Public:header" />
+<!--编辑/添加站点-->
+<div class="pad_lr_10">
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <form id="info_form" action="<if condition="$action_name=='add'">{:U('Site/add')}<else />{:U('Site/edit')}</if>" method="post">
+                <table width="100%" class="table_form">
+                    <tr>
+                        <th width="80">{:L('site_name')} :</th>
+                        <td><input type="text" name="site_name" class="input-text" id="J_site_name" value="{$info.site_name}" ></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('site_code')} :</th>
+                        <td><input type="text" name="site_code" class="input-text" id="J_site_code" value="{$info.site_code}" ></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('site_url')} :</th>
+                        <td><input type="text" name="site_url" id="J_site_url" value="{$info.site_url}" class="input-text"></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('web_url')} :</th>
+                        <td><input type="text" name="web_url" id="J_web_url" value="{$info.web_url}" class="input-text"></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('site_title')} :</th>
+                        <td><input type="text" name="site_title" id="J_site_title" value="{$info.site_title}" class="input-text"></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('site_keyword')} :</th>
+                        <td><input type="text" name="keyword" class="input-text" value="{$info.keyword}" size="30"></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('site_description')} :</th>
+                        <td><textarea class="" name="description" rows="4" cols="55">{$info.description}</textarea></td>
+                    </tr>
+                    <tr>
+                        <th>{:L('site_logo')} :</th>
+                        <td>
+                            <input type="text" class="input-text " name="site_logo" id="site_logo" value="{$info.site_logo}" size="30">
+                            <input type="button" class="btn" value="{:L('uploadfiles')}" onclick="javascript:swfupload('pic_uploadfile','site_logo','文件上传',1,0,0,1,'jpg,jpeg,gif,png',5,up_image)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>{:L('site_status')} :</th>
+                        <td>
+                    <input type="radio" name="status" class="radio_style" value="1" <if condition="!$info || $info.status eq 1"> checked="checked"</if>> &nbsp;{:L('yes')}&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="status" class="radio_style" value="0" <if condition="$info && $info.status eq 0"> checked="checked"</if>> &nbsp;{:L('no')}
+                    </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input type="submit" class="btn" value="{:L('submit')}">
+                        </td>
+                    </tr>
+                </table>
+                <input type="hidden" name="menuid" value="{$menuid}" />
+                <input type="hidden" name="site_id" value="{$info.site_id}" />
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+        <volist name=":L('js_site')" id="val">
+        lang.{$key} = "{$val}";
+        </volist>
+        $(function(){
+            $.formValidator.initConfig({formid:"info_form",autotip:true});
+            $("#J_site_name").formValidator({ onshow:lang.site_name, onfocus:lang.site_name}).inputValidator({ min:2, max:10, onerror:lang.site_name});
+            $("#J_site_code").formValidator({ onshow:lang.site_code, onfocus:lang.site_code}).inputValidator({ min:2, max:10, onerror:lang.site_code}).regexValidator({ regexp:'\\w', onerror:lang.allow_letter});
+            $("#J_site_url").formValidator({ onshow:lang.site_url, onfocus:lang.site_url}).inputValidator({ min:2, onerror:lang.site_url});
+            $("#J_web_url").formValidator({ empty:true, onfocus:lang.site_url}).inputValidator({ min:2, onerror:lang.site_url});
+
+        });
+</script>
+<include file="Public:footer" />
+</body>
+</html>

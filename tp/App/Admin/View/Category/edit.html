@@ -1,0 +1,69 @@
+<div class="dialog_content">
+    <form id="info_form" action="<if condition="$action_name=='add'">{:U('Category/add')}<else />{:U('Category/edit')}</if>" method="post">
+        <table width="100%" class="table_form">
+            <tr>
+                <th width="80">{:L('catsite')} :</th>
+                <td>
+                    <select style="clear:both;position: relative;width: 150px" name="site_id">
+                        <volist name="site_list" id="val">
+                            <option value="{$val.site_id}" <if condition="$val['site_id'] eq $info['site_id']">selected="selected"</if>>{$val.site_name}</option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('catparent')} :</th>
+                <td>
+                    <select style="clear:both;position: relative;width: 150px" name="parent_id">
+                        <option value="0">{:L('no_parent_cate')}</option>
+                        {$parent_cate}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('ispage')} :</th>
+                <td>
+                    <input type="radio" name="ispage" class="input-radio" <if condition="!$info or ($info.ispage eq 0)">checked</if> value="0" />{:L('no')} <input type="radio" name="ispage" class="input-radio" <if condition="$info.ispage eq 1">checked</if> value="1" />{:L('yes')}
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('catname')} :</th>
+                <td><input type="text" name="cat_name" class="input-text" id="J_cat_name" value="{$info.cat_name}" ></td>
+            </tr>
+            <tr>
+                <th>{:L('catdir')} :</th>
+                <td><input type="text" name="cat_dir" class="input-text" id="J_cat_dir" value="{$info.cat_dir}" ></td>
+            </tr>
+<!--            <tr>
+                <th>{:L('zq_url')} :</th>
+                <td><input type="text" name="zq_url" class="input-text" value="{$info.zq_url}" ></td>
+            </tr>
+            <tr>
+                <th>{:L('gl_url')} :</th>
+                <td><input type="text" name="gl_url" class="input-text" value="{$info.gl_url}" ></td>
+            </tr>-->
+        </table>
+        <input type="hidden" name="cat_id" value="{$info.cat_id}" />
+    </form>
+</div>
+
+<script>
+        <volist name=":L('js_cate')" id="val">
+        lang.{$key} = "{$val}";
+        </volist>
+        $(function(){
+            $.formValidator.initConfig({formid:"info_form",autotip:true});
+            $("#J_cat_name").formValidator({ onshow:lang.cat_name, onfocus:lang.cat_name}).inputValidator({ min:2, max:10, onerror:lang.cat_name});
+            $("#J_cat_dir").formValidator({ onshow:lang.cat_dir, onfocus:lang.cat_dir}).inputValidator({ min:2, max:50, onerror:lang.cat_dir}).regexValidator({ regexp:'\\w', onerror:lang.allow_letter});
+            $('#info_form').ajaxForm({success:complate,dataType:'json'});
+            function complate(result){
+                if(result.status == 1){
+                    $.dialog.get(result.dialog).close();
+                    $.TP.tip({content:result.msg});
+                    window.location.reload();
+                } else {
+                    $.TP.tip({content:result.msg, icon:'alert'});
+                }
+            }
+        });
+</script>

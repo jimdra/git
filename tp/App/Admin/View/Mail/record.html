@@ -1,0 +1,82 @@
+<include file="Public:header" />
+<script src="__PUBLIC__/js/MyDate/WdatePicker.js"></script>
+<div class="pad_lr_10">
+
+    <form name="searchform" id="search_form">
+        <table width="100%" cellspacing="0" class="search_form">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="explain_col">
+                            &nbsp;&nbsp;{:L('choose_game')} :
+                            <select class="searCom" name="platform_id" id="PlatformID">
+			    </select>
+                            &nbsp;&nbsp;{:L('choose_server')}:
+                            <select name="server_id" id="ServerID" style="width:200px;"></select>
+                            &nbsp;&nbsp;
+                            <select id="player_type" name="player_type">
+                                <option value="role_id">{:L('role_id')}</option>
+                            </select>
+                            <input type="text" name="player_info" id="player_info"  style="width:155px;height:20px;">
+                            &nbsp;&nbsp;{:L('operation_time')}:
+                            <input name="p_start" id="p_start"  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss' })" class="Wdate" /> -
+                            <input name="p_end" id="p_end" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss' })" class="Wdate" />
+                            <input type="button" onclick="dofind();" class="btn" value="{:L('search')}" />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div class="J_tablelist table_list">
+        <table width="100%" cellspacing="0" id="scl_tt2" style="height:500px;">
+            <thead>
+                <tr>
+                    <th data-options="field:'server_name',width:150,align:'center'">{:L('server_name')}</th>
+                    <th data-options="field:'title',width:150,align:'center'">{:L('mail_title')}</th>
+                    <th data-options="field:'content',width:150,align:'center'">{:L('mail_content')}</th>
+                    <th data-options="field:'operation_time',width:150,align:'center'">{:L('operation_time')}</th>
+                    <th data-options="field:'operation_user',width:80,align:'center'">{:L('operation_user')}</th>
+                    <th data-options="field:'player',width:80,align:'center'">{:L('player')}</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="btn_wrap_fixed">
+    </div>
+</div>
+<include file="Public:footer" />
+<script src="__PUBLIC__/js/option-change.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#PlatformID").linkage({ objects:['PlatformID','ServerID'], showAll:[true,true],all:'{:L("showall")}' , selected:{ platformlist:"{$search['platform_id']}",serverlist:"{$search['server_id']}"}});
+    $('#scl_tt2').datagrid({
+            singleSelect:true,
+            url:'{:U("Mail/record")}',
+            fitColumns:true,
+            nowrap:true,
+            pagination:true,  //分页
+            pageSize: 100,
+            pageList: [100,200,300]
+        });
+});
+
+function dofind() {
+        var platform_id = $('#PlatformID').val(),
+        server_id = $('#ServerID').val(),
+        player_type = $('#player_type').val(),
+        player_info = $('#player_info').val(),
+        p_start = $('#p_start').val(),
+        p_end = $('#p_end').val();
+        $('#scl_tt2').datagrid("reload", {
+            platform_id: platform_id,
+            server_id:server_id,
+            player_type:player_type,
+            player_info:player_info,
+            p_start : p_start,
+            p_end : p_end
+        });
+}
+</script>
+</body>
+</html>

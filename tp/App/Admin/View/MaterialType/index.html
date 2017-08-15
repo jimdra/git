@@ -1,0 +1,42 @@
+<include file="Public:header" />
+<!--栏目管理-->
+<div class="pad_lr_10">
+
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <div class="J_tablelist table_list" data-acturi="{:U('MaterialType/ajax_edit')}">
+                <table width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th width="40"><input type="checkbox" name="checkall" class="J_checkall"></th>
+                            <th width="40">{:L('type_id')}</th>
+                            <th>{:L('type_name')}</th>
+                            <th width=160>{:L('operations_manage')}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <volist name="list" id="val" >
+                        <tr>
+                            <td align="center"><input type="checkbox" class="J_checkitem" value="{$val.type_id}"></td>
+                            <td align="center">{$val.type_id}</td>
+                            <td align="center">{$val.type_name}</td>
+                        <td align="center">
+                            <a href="javascript:;" class="J_showdialog" data-uri="{:U('MaterialType/edit', array('type_id'=>$val['type_id'],'menuid'=>$menuid))}" data-title="{:L('edit')} - {$val['type_name']}" data-id="edit" data-width="400" data-height="200">{:L('edit')}</a> |
+                            <a href="javascript:;" class="J_confirmurl" data-uri="{:U('MaterialType/delete', array('type_id'=>$val['type_id']))}" data-msg="{:sprintf(L('confirm_delete_one'),$val['type_name'])}">{:L('delete')}</a>
+                        </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="btn_wrap_fixed">
+        <label class="select_all mr10"><input type="checkbox" name="checkall" class="J_checkall">{:L('select_all')}/{:L('cancel')}</label>
+        <input type="button" class="btn" data-tdtype="batch_action" data-acttype="ajax" data-uri="{:U('MaterialType/delete')}" data-name="game_id" data-msg="{:L('confirm_delete')}" value="{:L('delete')}" />
+        <div id="pages">{$page}</div>
+    </div>
+</div>
+<include file="Public:footer" />
+</body>
+</html>

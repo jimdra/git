@@ -1,0 +1,70 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/Public/css/admin/css/ch-ui.admin.css">
+	<link rel="stylesheet" href="/Public/css/admin/font/css/font-awesome.min.css">
+        <title><?php echo L('website_manage');?></title>
+    </head>
+
+    <body scroll="no" style="background:#F3F3F4;">
+        <div class="login_box">
+		<h1>雷神互娱</h1>
+		<h2>欢迎使用管理平台</h2>
+		<div class="form">
+                        <p style="color:red; display: none;" id="tips"></p>
+			<form action="<?php echo U('Login/dologin');?>" method="post" id="myform">
+				<ul>
+					<li>
+					<input type="text" name="username" class="text"/>
+						<span><i class="fa fa-user"></i></span>
+					</li>
+					<li>
+						<input type="password" name="password" class="text"/>
+						<span><i class="fa fa-lock"></i></span>
+					</li>
+					<li>
+						<input type="text" class="code" name="verify" id="verify"/>
+						<span><i class="fa fa-check-square-o"></i></span>
+						<img id="verifyImg" onclick="refreshVerify();" title="<?php echo (L("refresh_verify_code")); ?>" class="verify_img" src="<?php echo U('Public/verify_code', array('t'=>time()));?>">
+					</li>
+					<li>
+						<input type="submit" name="do" value="立即登陆"/>
+					</li>
+				</ul>
+			</form>
+			<p><a href="#">返回首页</a> &copy; 2016 Powered by <a href="http://www.leishenhuyu.com" target="_blank">http://www.leishenhuyu.com</a></p>
+		</div>
+	</div>
+        <script language="javascript" type="text/javascript" src="/Public/js/jquery/jquery.js"></script>
+        <script>
+            $(function(){
+                if(self != top){
+                    top.location = self.location;
+                }
+
+                $("#myform").submit(function(){
+                    var self = $(this);
+                    $.post(self.attr("action"), self.serialize(), success, "json");
+                    return false;
+
+                    function success(data){
+                        if(data.status){
+                            window.location.href = data.url;
+                        } else {
+                            refreshVerify();
+                            $('#tips').text(data.info);
+                            $('#tips').show();
+                        }
+                    }
+                });
+
+            });
+
+            function refreshVerify(){
+                var timenow = new Date().getTime();
+                document.getElementById('verifyImg').src= 'index.php?c=Public&a=verify_code&t='+timenow;
+            }
+        </script>
+    </body>
+</html>

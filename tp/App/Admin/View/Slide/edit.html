@@ -1,0 +1,52 @@
+<div class="dialog_content">
+    <form id="info_form" action="<if condition="$action_name=='add'">{:U('Slide/add')}<else />{:U('Slide/edit')}</if>" method="post">
+        <table width="100%" class="table_form">
+            <tr>
+                <th width="80">{:L('site_name')} :</th>
+                <td>
+                    <select style="clear:both;position: relative;width: 150px" name="site_id" id="J_site_id">
+                        <option value="0">{:L('chose_site')}</option>
+                        <volist name="site_list" id="val">
+                            <option value="{$val.site_id}" <if condition="$val['site_id'] eq $info['site_id']">selected="selected"</if>>{$val.site_name}</option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('name')} :</th>
+                <td><input type="text" name="name" class="input-text" id="J_name" value="{$info.name}" ></td>
+            </tr>
+            <tr>
+                <th>{:L('width')} :</th>
+                <td><input type="text" name="width" value="{$info.width}" class="input-text"></td>
+            </tr>
+            <tr>
+                <th>{:L('height')} :</th>
+                <td><input type="text" name="height" value="{$info.height}" class="input-text"></td>
+            </tr>
+        </table>
+        <input type="hidden" name="menuid" value="{$menuid}" />
+        <input type="hidden" name="id" value="{$info.id}" />
+    </form>
+</div>
+<script>
+        <volist name=":L('js_site')" id="val">
+        lang.{$key} = "{$val}";
+        </volist>
+        $(function(){
+        $.formValidator.initConfig({formid:"info_form",autotip:true});
+        $("#J_site_id").formValidator({ onshow:lang.site_name, onfocus:lang.site_name}).inputValidator({ min:1, onerror:lang.site_name});
+        $("#J_site_url").formValidator({ onshow:lang.site_url, onfocus:lang.site_url}).inputValidator({ min:2, onerror:lang.site_url});
+        $("#J_web_url").formValidator({ empty:true, onfocus:lang.site_url}).inputValidator({ min:2, onerror:lang.site_url});
+        $('#info_form').ajaxForm({success:complate,dataType:'json'});
+        function complate(result){
+            if(result.status == 1){
+                $.dialog.get(result.dialog).close();
+                $.TP.tip({content:result.msg});
+                window.location.reload();
+            } else {
+                $.TP.tip({content:result.msg, icon:'alert'});
+            }
+        }
+    });
+</script>

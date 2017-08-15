@@ -1,0 +1,55 @@
+<include file="Public:header" />
+<!--编辑/添加站点-->
+<div class="pad_lr_10">
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <form id="info_form" action="{:U("Material/$action_name")}" method="post">
+                  <input type="hidden" name="menuid" value="{$menuid}" />
+                <table width="100%" class="table_form">
+                    <tr>
+                        <th width="80">{:L('game_name')} :</th>
+                        <td>
+                            <select style="clear:both;position: relative;width: 150px" name="game_id">
+                                <volist name="game_list" id="val">
+                                    <option value="{$val.game_id}" <if condition="$val['game_id'] eq $info['game_id']">selected="selected"</if>>{$val.game_name}</option>
+                                </volist>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('name')} :</th>
+                        <td><input type="text" name="material_name" class="input-text" id="J_material_name" value="{$info.material_name}" size="30"></td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('material')} :</th>
+                        <td>
+                            <input type="text" class="input-text " name="material_thumb" id="material_thumb" value="{$info.material_thumb}" size="30">
+                            <input type="button" class="btn" value="{:L('uploadfiles')}" onclick="javascript:swfupload('pic_uploadfile','material_thumb','文件上传',1,0,0,10,'jpg,jpeg,gif,png,mp4',2,up_images)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="80">{:L('type_name')} :</th>
+                        <td>
+                            <select style="clear:both;position: relative;width: 150px" name="type_id">
+                                <volist name="type_list" id="val">
+                                    <option value="{$val.type_id}" <if condition="$val['type_id'] eq $info['type_id']">selected="selected"</if>>{$val.type_name}</option>
+                                </volist>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input type="submit" class="btn" value="{:L('submit')}">
+                        </td>
+                    </tr>
+                </table>
+                <input type="hidden" name="material_id" value="{$info.material_id}" />
+            </form>
+        </div>
+    </div>
+</div>
+
+<include file="Public:footer" />
+</body>
+</html>

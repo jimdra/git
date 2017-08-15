@@ -1,0 +1,22 @@
+<?php
+return array(
+        'mail_title'=>'标题',
+        'mail_content'=>'内容',
+        'server_name'=>'游戏服名称',
+        'operation_time'=>'发布时间',
+        'operation_user'=>'发布人',
+        'player'=>'对象',
+    'attachment'=>'附件',
+    'reason'=>'原因',
+    'review_user'=>'审核人',
+    'review_time'=>'审核时间',
+    'review'=>'审核通过',
+    'opt'=>'操作',
+    'add_property'=>'添加道具',
+    'property_type'=>'道具类型',
+    'property_num'=>'数量',
+    'reject'=>'驳回',
+    'add_monster'=>'添加统帅',
+    'monster_type'=>'统帅类型',
+);
+?>

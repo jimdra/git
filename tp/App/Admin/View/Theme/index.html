@@ -1,0 +1,46 @@
+<include file="Public:header" />
+<!--栏目管理-->
+<div class="pad_lr_10">
+
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <div class="J_tablelist table_list" data-acturi="{:U('Theme/ajax_edit')}">
+                <table width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th width="40"><input type="checkbox" name="checkall" class="J_checkall"></th>
+                            <th width="40">{:L('theme_id')}</th>
+                            <th>{:L('theme_name')}</th>
+                            <th>{:L('theme_code')}</th>
+                            <th>{:L('material_num')}</th>
+                            <th width=160>{:L('operations_manage')}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <volist name="list" id="val" >
+                        <tr>
+                            <td align="center"><input type="checkbox" class="J_checkitem" value="{$val.theme_id}"></td>
+                            <td align="center">{$val.theme_id}</td>
+                            <td align="center">{$val.theme_name}</td>
+                            <td align="center">{$val.theme_code}</td>
+                            <td align="center">{$val.material_num}</td>
+                        <td align="center">
+                            <a href="javascript:;" class="J_showdialog" data-uri="{:U('Theme/edit', array('theme_id'=>$val['theme_id'],'menuid'=>$menuid))}" data-title="{:L('edit')} - {$val['theme_name']}" data-id="edit" data-width="400" data-height="200">{:L('edit')}</a> |
+                            <a href="javascript:;" class="J_confirmurl" data-uri="{:U('Theme/delete', array('theme_id'=>$val['theme_id']))}" data-msg="{:sprintf(L('confirm_delete_one'),$val['theme_name'])}">{:L('delete')}</a>
+                        </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="btn_wrap_fixed">
+        <label class="select_all mr10"><input type="checkbox" name="checkall" class="J_checkall">{:L('select_all')}/{:L('cancel')}</label>
+        <input type="button" class="btn" data-tdtype="batch_action" data-acttype="ajax" data-uri="{:U('Theme/delete')}" data-name="theme_id" data-msg="{:L('confirm_delete')}" value="{:L('delete')}" />
+        <div id="pages">{$page}</div>
+    </div>
+</div>
+<include file="Public:footer" />
+</body>
+</html>

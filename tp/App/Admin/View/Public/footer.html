@@ -1,0 +1,135 @@
+<script src="__PUBLIC__/js/jquery/plugins/jquery.tools.min.js"></script>
+<script src="__PUBLIC__/js/jquery/plugins/formvalidator.js"></script>
+<script src="__PUBLIC__/js/my.js"></script>
+<script src="__PUBLIC__/js/admin.js"></script>
+<script src="__PUBLIC__/js/swfupload.js"></script>
+<script>
+    //初始化弹窗
+    (function (d) {
+        d['okValue'] = lang.dialog_ok;
+        d['cancelValue'] = lang.dialog_cancel;
+        d['title'] = lang.dialog_title;
+    })($.dialog.defaults);
+
+    //全选反选服务器
+    $('.check_all_server').live('click', function(){
+        $('.check_server').attr('checked', this.checked);
+        $('.check_all_server').attr('checked', this.checked);
+        var ids = '';
+        $('.check_server:checked').each(function(){
+            ids +=  ',' + $(this).val() ;
+        });
+        $('#server_ids').val(ids);
+    });
+
+    $('.check_server').live('click', function(){
+        var ids = '';
+        $('.check_server:checked').each(function(){
+            ids +=  ',' + $(this).val() ;
+        });
+        $('#server_ids').val(ids);
+    });
+
+    function confirmUrl(obj){
+        var self = $(obj),
+        uri = self.attr('data-uri'),
+        acttype = self.attr('data-acttype'),
+        title = (self.attr('data-title') != undefined) ? self.attr('data-title') : lang.confirm_title,
+        msg = self.attr('data-msg'),
+        callback = self.attr('data-callback');
+        $.dialog({
+            title:title,
+            content:msg,
+            padding:'10px 20px',
+            lock:true,
+            ok:function(){
+                if(acttype == 'ajax'){
+                    $.getJSON(uri, function(result){
+                        if(result.status == 1){
+                            $.TP.tip({content:result.msg});
+                            if(callback != undefined){
+                                eval(callback+'(self)');
+                            }else{
+                                window.location.reload();
+                            }
+                        }else{
+                            $.TP.tip({content:result.msg, icon:'error'});
+                        }
+                    });
+                }else{
+                    location.href = uri;
+                }
+            },
+            cancel:function(){}
+        });
+    }
+
+    function showDialog(obj){
+        var self = $(obj),
+        dtitle = self.attr('data-title'),
+        did = self.attr('data-id'),
+        duri = self.attr('data-uri'),
+        dwidth = parseInt(self.attr('data-width')),
+        dheight = parseInt(self.attr('data-height')),
+        dpadding = (self.attr('data-padding') != undefined) ? self.attr('data-padding') : '',
+        dcallback = self.attr('data-callback');
+        var other = "",ids="";
+        if(self.attr('data-other')) {
+            other = self.attr('data-other');
+        }
+        if(other == "checkbox") {
+            $('.J_checkitem:checked').each(function(){
+                ids += $(this).val() + ',';
+            });
+            if(ids == "") {
+                $.TP.tip({
+                    content:lang.plsease_select_rows,
+                    icon:'alert'
+                });
+                return false;
+            }
+        }else{
+            duri+=other;
+        }
+        $.dialog({
+            id:did
+        }).close();
+        $.dialog({
+            id:did,
+            title:dtitle,
+            width:dwidth ? dwidth : 'auto',
+            height:dheight ? dheight : 'auto',
+            padding:dpadding,
+            lock:true,
+            ok:function(){
+                var info_form = this.dom.content.find('#info_form');
+                if(info_form[0] != undefined){
+                    info_form.submit();
+                    if(dcallback != undefined){
+                        eval(dcallback+'()');
+                    }
+                    return false;
+                }
+                if(dcallback != undefined){
+                    eval(dcallback+'()');
+                }
+            },
+            cancel:function(){}
+        });
+        $.getJSON(duri, function(result){
+            if(result.status == 1){
+                $.dialog.get(did).content(result.data);
+            }
+        });
+        return false;
+    }
+</script>
+
+<present name="list_table">
+    <script src="__PUBLIC__/js/jquery/plugins/listTable.js"></script>
+    <script>
+        $(function(){
+            $('.J_tablelist').listTable();
+        });
+    </script>
+</present>

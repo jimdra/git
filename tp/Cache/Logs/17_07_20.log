@@ -1,0 +1,2553 @@
+[ 2017-07-20T09:28:37+08:00 ] ::1 /tp/index.php?m=&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.013000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014000s ]
+INFO: [ action_begin ] --START--
+NOTIC: [8] Undefined index: admin F:\wamp64\www\tp\App\Common\Behavior\AccessBehavior.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.019001s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES (null,'Admin','Login','index',1500514117,'0.0.0.0','[]') [ RunTime:0.001000s ]
+ERR: 1048:Column 'username' cannot be null
+ [ SQL语句 ] : INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES (null,'Admin','Login','index',1500514117,'0.0.0.0','[]')
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.042002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-07-20T09:28:37+08:00 ] ::1 /tp/index.php?m=&c=Public&a=verify_code&t=1500514117
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ action_begin ] --START--
+NOTIC: [8] Undefined index: admin F:\wamp64\www\tp\App\Common\Behavior\AccessBehavior.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES (null,'Admin','Public','verify_code',1500514117,'0.0.0.0','{\"t\":\"1500514117\"}') [ RunTime:0.000000s ]
+ERR: 1048:Column 'username' cannot be null
+ [ SQL语句 ] : INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES (null,'Admin','Public','verify_code',1500514117,'0.0.0.0','{\"t\":\"1500514117\"}')
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.009001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T09:56:15+08:00 ] ::1 /tp/index.php?m=&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+INFO: [ action_begin ] --START--
+NOTIC: [8] Undefined index: admin F:\wamp64\www\tp\App\Common\Behavior\AccessBehavior.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.057004s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES (null,'Admin','Login','index',1500515775,'0.0.0.0','[]') [ RunTime:0.001000s ]
+ERR: 1048:Column 'username' cannot be null
+ [ SQL语句 ] : INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES (null,'Admin','Login','index',1500515775,'0.0.0.0','[]')
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.159009s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.160009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-20T09:56:15+08:00 ] ::1 /tp/index.php?m=&c=Public&a=verify_code&t=1500515775
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ action_begin ] --START--
+NOTIC: [8] Undefined index: admin F:\wamp64\www\tp\App\Common\Behavior\AccessBehavior.class.php 第 13 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES (null,'Admin','Public','verify_code',1500515775,'0.0.0.0','{\"t\":\"1500515775\"}') [ RunTime:0.001000s ]
+ERR: 1048:Column 'username' cannot be null
+ [ SQL语句 ] : INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES (null,'Admin','Public','verify_code',1500515775,'0.0.0.0','{\"t\":\"1500515775\"}')
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.013001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:05:59+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Login','index',1500516359,'127.0.0.1','[]') [ RunTime:0.015001s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.026002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:05:59+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Public&a=verify_code&t=1500516359
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Public','verify_code',1500516359,'127.0.0.1','{\"t\":\"1500516359\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.017001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.017001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:06:02+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Login&a=dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Login','dologin',1500516362,'127.0.0.1','{\"username\":\"admin\",\"password\":\"admin123\",\"verify\":\"3574\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.018001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.020001s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.031002s ]
+SQL: SELECT * FROM `admin` WHERE ( `username` = 'admin' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.004000s ]
+SQL: UPDATE `admin` SET `last_time`=1500516362,`last_ip`='127.0.0.1',`login_count`=login_count+1 WHERE ( `id` = 1 ) [ RunTime:0.005000s ]
+
+[ 2017-07-20T10:06:03+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\IndexController.class.php 第 4 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001001s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Index','index',1500516362,'127.0.0.1','[]') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.018001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 0 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.001000s ]
+SQL: SELECT `name` FROM `admin_role` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-20T10:06:03+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=index&a=panel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\IndexController.class.php 第 4 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Index','panel',1500516363,'127.0.0.1','[]') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.007001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sub_menu F:\wamp64\www\tp\Cache\Cache\Admin\362c0c7a407ab260ee4d2bc810362462.php 第 25 行.
+NOTIC: [8] Undefined variable: big_menu F:\wamp64\www\tp\Cache\Cache\Admin\362c0c7a407ab260ee4d2bc810362462.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:06:03+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Index&a=left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\IndexController.class.php 第 4 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.002000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Index','left',1500516363,'127.0.0.1','[]') [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.025002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.025002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `often` = 1 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: data F:\wamp64\www\tp\Cache\Cache\Admin\6a50c6d503dcfec33a87262cae7a0f6e.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:06:05+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Index&a=left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\IndexController.class.php 第 4 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Index','left',1500516365,'127.0.0.1','{\"menuid\":\"36\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.012001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 36 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 36 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 36 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 56 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 37 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:06:07+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Theme&a=index&menuid=61
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+NOTIC: [2048] Declaration of Admin\Controller\ThemeController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\ThemeController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Theme','index',1500516366,'127.0.0.1','{\"menuid\":\"61\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.010001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 61 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 26 行.
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 61 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.021001s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(theme_id) AS tp_count FROM `theme` LIMIT 1   [ RunTime:0.018001s ]
+SQL: SELECT * FROM `theme` ORDER BY theme_id desc LIMIT 0,20   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:06:07+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Theme&a=index&menuid=61
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ThemeController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\ThemeController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Theme','index',1500516367,'127.0.0.1','{\"menuid\":\"61\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.019001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 61 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 26 行.
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 61 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.007000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(theme_id) AS tp_count FROM `theme` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` ORDER BY theme_id desc LIMIT 0,20   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-20T10:06:08+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=index&menuid=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','index',1500516368,'127.0.0.1','{\"menuid\":\"57\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.013001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(material_id) AS tp_count FROM `material` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` ORDER BY material_id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 47 行.
+NOTIC: [8] Undefined index: id F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 88 行.
+NOTIC: [8] Undefined index: title F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 88 行.
+NOTIC: [8] Undefined index: id F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 88 行.
+NOTIC: [8] Undefined index: title F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 88 行.
+NOTIC: [8] Undefined index: id F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 88 行.
+NOTIC: [8] Undefined index: title F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 88 行.
+NOTIC: [8] Undefined index: id F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 88 行.
+NOTIC: [8] Undefined index: title F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:06:17+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=delete&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','delete',1500516377,'127.0.0.1','{\"id\":\"2\"}') [ RunTime:0.001001s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.011001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:08:31+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=index&menuid=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','index',1500516511,'127.0.0.1','{\"menuid\":\"57\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.009001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(material_id) AS tp_count FROM `material` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `material` ORDER BY material_id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:08:36+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=delete&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','delete',1500516516,'127.0.0.1','{\"id\":\"2\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.008001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:09:50+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=index&menuid=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','index',1500516590,'127.0.0.1','{\"menuid\":\"57\"}') [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.011001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(material_id) AS tp_count FROM `material` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `material` ORDER BY material_id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:09:53+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=delete&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','delete',1500516593,'127.0.0.1','{\"id\":\"2\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.020001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.020001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:10:04+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=delete&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001001s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','delete',1500516604,'127.0.0.1','{\"id\":\"2\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.015001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:10:21+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=delete&id=2,1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','delete',1500516621,'127.0.0.1','{\"id\":\"2,1\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.020001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.020001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:10:48+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=index&menuid=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','index',1500516648,'127.0.0.1','{\"menuid\":\"57\"}') [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.013001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(material_id) AS tp_count FROM `material` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` ORDER BY material_id desc LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:10:52+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=delete&material_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001001s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','delete',1500516652,'127.0.0.1','{\"material_id\":\"2\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.015001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.001000s ]
+SQL: DELETE FROM `material` WHERE ( `material_id` = 2 ) [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:10:52+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=index&menuid=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','index',1500516652,'127.0.0.1','{\"menuid\":\"57\"}') [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.023001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(material_id) AS tp_count FROM `material` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` ORDER BY material_id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:11:23+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Game&a=index&menuid=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\GameController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\GameController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Game','index',1500516683,'127.0.0.1','{\"menuid\":\"52\"}') [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.021001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.021001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 52 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 26 行.
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 52 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(game_id) AS tp_count FROM `game` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` ORDER BY game_id desc LIMIT 0,20   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id F:\wamp64\www\tp\Cache\Cache\Admin\108bd2c831fdab9c052d14b7f8a43af4.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:11:23+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Game&a=index&menuid=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\GameController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\GameController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Game','index',1500516683,'127.0.0.1','{\"menuid\":\"52\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.018001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 52 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 26 行.
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 52 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(game_id) AS tp_count FROM `game` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game` ORDER BY game_id desc LIMIT 0,20   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id F:\wamp64\www\tp\Cache\Cache\Admin\108bd2c831fdab9c052d14b7f8a43af4.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:11:48+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Theme&a=index&menuid=61
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ThemeController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\ThemeController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Theme','index',1500516707,'127.0.0.1','{\"menuid\":\"61\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.021001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.021001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 61 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 26 行.
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 61 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(theme_id) AS tp_count FROM `theme` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` ORDER BY theme_id desc LIMIT 0,20   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:12:21+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.024001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024001s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500516741,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.009001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.008001s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:12:21+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500516741,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.008000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:20:54+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=stat&menuid=42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','stat',1500517254,'127.0.0.1','{\"menuid\":\"42\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.011001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 42 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 26 行.
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 42 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:20:54+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=stat&menuid=42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','stat',1500517254,'127.0.0.1','{\"menuid\":\"42\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.017001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 42 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 26 行.
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 42 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:20:54+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=stat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','stat',1500517254,'127.0.0.1','{\"page\":\"1\",\"rows\":\"20\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.008001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `land` [ RunTime:0.001000s ]
+ERR: 1146:Table 'tpadmin.land' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `land`
+NOTIC: [8] Undefined variable: where F:\wamp64\www\tp\App\Admin\Model\LandModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `land_log` [ RunTime:0.001000s ]
+SQL: SELECT FROM_UNIXTIME(addtime,'%Y-%m-%d') AS stat_date,land_id,count(*) AS num,count(distinct ip) AS ip_num FROM land_log WHERE type=1  and addtime>='1500393600' and addtime<'1500566399' GROUP BY land_id,stat_date [ RunTime:0.033001s ]
+SQL: SHOW COLUMNS FROM `land_stat` [ RunTime:0.001000s ]
+SQL: REPLACE INTO `land_stat` (`stat_date`,`land_id`,`visit_num`,`visit_num_ip`) VALUES ('2017-07-19',13,12,1) [ RunTime:0.057004s ]
+SQL: SELECT FROM_UNIXTIME(addtime,'%Y-%m-%d') AS stat_date,land_id,count(*) AS num,count(distinct ip) AS ip_num FROM land_log WHERE type=2  and addtime>='1500393600' and addtime<'1500566399' GROUP BY land_id,stat_date [ RunTime:0.000000s ]
+SQL: INSERT INTO `land_stat` (`stat_date`,`land_id`,`down_num`,`down_num_ip`) VALUES ('2017-07-19',13,17,1) [ RunTime:0.001000s ]
+ERR: 1062:Duplicate entry '2017-07-19-13' for key 'land_date'
+ [ SQL语句 ] : INSERT INTO `land_stat` (`stat_date`,`land_id`,`down_num`,`down_num_ip`) VALUES ('2017-07-19',13,17,1)
+SQL: UPDATE `land_stat` SET `down_num`=17,`down_num_ip`=1 WHERE ( `stat_date` = '2017-07-19' ) AND ( `land_id` = 13 ) [ RunTime:0.046002s ]
+SQL: SELECT * FROM land_stat WHERE 1  ORDER BY stat_date desc limit 0,20 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = null ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS p_count FROM land_stat WHERE 1  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:20:54+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001001s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500517254,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.015001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:26:11+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=edit&id=9&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','edit',1500517571,'127.0.0.1','{\"id\":\"9\",\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.013001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:26:12+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Theme&a=getTheme
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ThemeController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\ThemeController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Theme','getTheme',1500517572,'127.0.0.1','{\"theme_id\":\"2\",\"land_id\":\"9\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.008000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.002001s ]
+SQL: SELECT `images` FROM `land_info` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:26:15+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500517575,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.020001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.021001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:27:08+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=stat&menuid=42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','stat',1500517628,'127.0.0.1','{\"menuid\":\"42\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.007001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 42 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 26 行.
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 42 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:27:08+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=stat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','stat',1500517628,'127.0.0.1','{\"page\":\"1\",\"rows\":\"20\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.017001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `land` [ RunTime:0.000000s ]
+ERR: 1146:Table 'tpadmin.land' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `land`
+NOTIC: [8] Undefined variable: where F:\wamp64\www\tp\App\Admin\Model\LandModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `land_log` [ RunTime:0.001000s ]
+SQL: SELECT FROM_UNIXTIME(addtime,'%Y-%m-%d') AS stat_date,land_id,count(*) AS num,count(distinct ip) AS ip_num FROM land_log WHERE type=1  and addtime>='1500393600' and addtime<'1500566399' GROUP BY land_id,stat_date [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `land_stat` [ RunTime:0.000000s ]
+SQL: REPLACE INTO `land_stat` (`stat_date`,`land_id`,`visit_num`,`visit_num_ip`) VALUES ('2017-07-19',13,12,1) [ RunTime:0.028002s ]
+SQL: SELECT FROM_UNIXTIME(addtime,'%Y-%m-%d') AS stat_date,land_id,count(*) AS num,count(distinct ip) AS ip_num FROM land_log WHERE type=2  and addtime>='1500393600' and addtime<'1500566399' GROUP BY land_id,stat_date [ RunTime:0.000000s ]
+SQL: INSERT INTO `land_stat` (`stat_date`,`land_id`,`down_num`,`down_num_ip`) VALUES ('2017-07-19',13,17,1) [ RunTime:0.000000s ]
+ERR: 1062:Duplicate entry '2017-07-19-13' for key 'land_date'
+ [ SQL语句 ] : INSERT INTO `land_stat` (`stat_date`,`land_id`,`down_num`,`down_num_ip`) VALUES ('2017-07-19',13,17,1)
+SQL: UPDATE `land_stat` SET `down_num`=17,`down_num_ip`=1 WHERE ( `stat_date` = '2017-07-19' ) AND ( `land_id` = 13 ) [ RunTime:0.023001s ]
+SQL: SELECT * FROM land_stat WHERE 1  ORDER BY stat_date desc limit 0,20 [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS p_count FROM land_stat WHERE 1  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:27:09+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500517629,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.010000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.001001s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:27:16+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Game&a=index&menuid=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\GameController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\GameController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Game','index',1500517636,'127.0.0.1','{\"menuid\":\"52\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.007000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 52 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 26 行.
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 52 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(game_id) AS tp_count FROM `game` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` ORDER BY game_id desc LIMIT 0,20   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:27:18+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Material&a=index&menuid=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2048] Declaration of Admin\Controller\MaterialController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\MaterialController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Material','index',1500517638,'127.0.0.1','{\"menuid\":\"57\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.011001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 57 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(material_id) AS tp_count FROM `material` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` ORDER BY material_id desc LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\c49d0c1db5aa79b9e5a81eae578df58f.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:27:19+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Theme&a=index&menuid=61
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ThemeController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\ThemeController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Theme','index',1500517639,'127.0.0.1','{\"menuid\":\"61\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.011001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 61 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 26 行.
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 61 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(theme_id) AS tp_count FROM `theme` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` ORDER BY theme_id desc LIMIT 0,20   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:27:20+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500517640,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.012001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:34:55+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500518095,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.014000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:35:18+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500518118,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.008000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:37:40+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500518260,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.020002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.020002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:37:49+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=recreate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','recreate',1500518269,'127.0.0.1','[]') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.019001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 61 行.
+ERR: 模板不存在:./App/Admin/View/Land/TMPL_PATH404.html.html
+
+[ 2017-07-20T10:37:51+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500518271,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.010001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:47:44+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500518864,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.014001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:47:46+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=recreate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','recreate',1500518866,'127.0.0.1','[]') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.018001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant TMPL_PATH - assumed 'TMPL_PATH' F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 61 行.
+ERR: 模板不存在:./App/Admin/View/Land/TMPL_PATH404.html.html
+
+[ 2017-07-20T10:47:53+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500518873,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.013001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:48:00+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500518880,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.013000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:58:04+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500519484,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.019001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:58:09+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=recreate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','recreate',1500519489,'127.0.0.1','[]') [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.010001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `land_info` WHERE ( theme != '' )  [ RunTime:0.001000s ]
+
+[ 2017-07-20T10:58:32+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=recreate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','recreate',1500519512,'127.0.0.1','[]') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.024001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.024001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` WHERE ( theme != '' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/NGx0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 4 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 5 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/NWx0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 5 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.035002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.034002s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/Nmx0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 6 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.042002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.042003s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/N2x0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 7 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.050003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.049003s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/OGx0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 8 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.057003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.057003s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/OWx0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 9 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.064004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.064004s ]
+
+[ 2017-07-20T10:58:32+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500519512,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.009001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-20T10:58:47+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=recreate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.001000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','recreate',1500519527,'127.0.0.1','[]') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.020001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.020001s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` WHERE ( theme != '' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/NGx0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 4 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `material` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/NWx0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 5 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008000s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/Nmx0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 6 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016001s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/N2x0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 7 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.025001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.025001s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/OGx0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 8 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.033001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.033002s ]
+SQL: SELECT * FROM `land_info` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `theme` WHERE ( `theme_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `land_info` SET `land_url`='https://leishenhuyu.com/landing/html/ltzz/OWx0enrmibnph4/mtYvor5U=.html' WHERE ( `id` = 9 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `material` WHERE ( material_id in (3,4) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.043002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.042002s ]
+
+[ 2017-07-20T10:58:48+08:00 ] 127.0.0.1 http://admin.leishenhuyu.com/index.php?m=&c=Land&a=index&menuid=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\LandController::index() should be compatible with Admin\Controller\BaseController::index($model = '') F:\wamp64\www\tp\App\Admin\Controller\LandController.class.php 第 10 行.
+INFO: [ action_begin ] --START--
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_access_log` [ RunTime:0.000000s ]
+SQL: INSERT INTO `admin_access_log` (`username`,`module`,`controller`,`action`,`act_time`,`ip`,`params`) VALUES ('admin','Admin','Land','index',1500519528,'127.0.0.1','{\"menuid\":\"38\"}') [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\AccessBehavior [ RunTime:0.017001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` <> 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_auth` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `menu` WHERE ( `iframe` = 1 ) AND (  ( `pid` = 38 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `admin_auth` WHERE ( role_id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `game`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `theme` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `theme`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: db_dsn F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params F:\wamp64\www\tp\Core\Library\Think\Db.class.php 第 130 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\wamp64\www\tp\Core\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `land_info` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: sort F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 327 行.
+NOTIC: [8] Undefined index: order F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 328 行.
+NOTIC: [8] Undefined index: listRows F:\wamp64\www\tp\App\Admin\Controller\BaseController.class.php 第 329 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `land_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `land_info` ORDER BY id desc LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `game_name` FROM `game` WHERE ( `game_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keyword F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 45 行.
+NOTIC: [8] Undefined variable: searchtype F:\wamp64\www\tp\Cache\Cache\Admin\cd680b5adc62e94253d75caef37030b3.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

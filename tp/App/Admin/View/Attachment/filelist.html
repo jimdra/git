@@ -1,0 +1,83 @@
+<style>
+    html, body, p, table{font: normal 12PX Tahoma,Verdana,Helvetica,Arial,sans-serif; }
+    html{_overflow-y:scroll}
+    .swfupload {position: absolute;z-index: 1;}
+    .mainnav_title {display:none;}
+    #tabs {margin:0px auto;overflow:hidden;}
+    #tabs .title {height:29px;}
+    #tabs .title ul li {float:left;height:27px;line-height:27px;border:1px solid #CFDFF0;border-bottom:0;background:#EAEEF4;padding:0px 10px;list-style-type:none;}
+    #tabs .title ul li a{color: #444444}
+    #tabs .title ul li.on {background:#FFF;height:28px;}
+    #tabs .content_1 {border:1px solid #CFDFF0;overflow:hidden;}
+    #tabs .tabbox {padding:10px;}
+</style>
+<link href="__PUBLIC__/js/swfupload/swfupload.css" rel="stylesheet" type="text/css" />
+
+<div id="content" style="width:600px;">
+    <div id="tabs">
+        <div class="title">
+            <ul>
+                <li class="on"><a href="javascript:void(0);">{:L('upload_list_file')}</a></li>
+            </ul>
+            <div class="" style="margin-left:85px;">
+                <select id="game_id" name="game_id">
+                    <option value="0">{:L('game_name')}</option>
+                    <volist name="game_list" id="vo">
+                        <option value="{$vo.game_id}" <if condition="$vo['game_id'] eq $search['game_id']">selected="selected"</if>>{$vo.game_name}</option>
+                    </volist>
+                </select>
+                <select id="type_id" name="type_id">
+                    <option value="0">{:L('type_name')}</option>
+                    <volist name="type_list" id="vo">
+                        <option value="{$vo.type_id}" <if condition="$vo['type_id'] eq $search['type_id']">selected="selected"</if>>{$vo.type_name}</option>
+                    </volist>
+                </select>
+                <input type="button" name="search" onclick="ajaxload()" class="btn" value="{:L('search')}" />
+            </div>
+        </div>
+
+        <div class="content_1">
+
+            <div class="tabbox">
+                <div id="filelist">
+                    <div id="thumbnails1" ><ul class="attachment-list" style="padding:0;margin:0;">
+                            <volist name="list" id="vo" key="k">
+                                <li><div class="img"><a href="javascript:void(0);" data="{$vo.material_id}" onclick="javascript:add_file(this)"><div class="icon"></div><img src="{$vo['material_thumb']}"  style="max-width:80px;_width:80px;max-height:80px;_height:80px;"></a></div></li>  		 
+                            </volist>
+                        </ul></div>
+                    <div id="pages" class="page">{$page}</div> 
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    function ajaxload(p=1){
+        var game_id = $('#game_id').val();
+        var type_id = $('#type_id').val();
+        var data = 'game_id='+game_id+'&type_id='+type_id+'&p='+p;
+        var url = "{:U('Attachment/filelist')}";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            success: function(result){
+                $('#filelist').empty().append(result.data);
+            }
+        });
+    }
+    
+    function add_file(obj){
+ 	var src = $(obj).children("img").attr("path");
+	var name = $(obj).children("img").attr("alt");
+	var filesize =  $(obj).children("img").attr("imgsize"); 
+	if($(obj).hasClass('on')){
+            $(obj).removeClass("on");
+	} else {
+            $('#filelist li a').removeClass('on');
+            $(obj).addClass("on");
+	}
+    }
+</script>
+
+
+

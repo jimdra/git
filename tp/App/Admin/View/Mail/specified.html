@@ -1,0 +1,73 @@
+<include file="Public:header" />
+<script src="__PUBLIC__/js/MyDate/WdatePicker.js"></script>
+<div class="dialog_content" style="margin: 20px">
+    <form name="info_form" id="info_form" action="{:U('Mail/specified')}" method="post" onsubmit="return check();">
+        <table width="100%" class="table_form">
+            <tr>
+                <th width="80">{:L('choose_game')} :</th>
+                <td>
+                    <select class="searCom" name="platform_id" id="PlatformID"></select>
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('choose_server')} :</th>
+                <td>
+                    <select name="server_id" id="ServerID" style="width:200px;"></select>
+                </td>
+            </tr>
+            <tr>
+                <th>{:L('role_id')} :</th>
+                <td><textarea name="player_info" id="player_info" cols="30" rows="3"></textarea>多个用英文模式逗号隔开(101,102)</td>
+            </tr>
+            <tr>
+                <th>{:L('mail_title')} :</th>
+                <td><input name="title" id="title" class="input-text"  style="width: 300px" /></td>
+            </tr>
+            <tr>
+                <th>{:L('mail_content')} :</th>
+                <td><textarea name="content" id="content" cols="55" rows="5"></textarea></td>
+            </tr>
+        </table>
+        <br/>
+        <INPUT TYPE="submit"  value="{:L('submit')}" class="btn" >
+    </form>
+</div>
+
+<include file="Public:footer" />
+<script src="__PUBLIC__/js/option-change.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#PlatformID").linkage({ objects:['PlatformID','ServerID'], showAll:[true,true],all:'{:L("showall")}' , selected:{ platformlist:"{$search['platform_id']}",serverlist:"{$search['server_id']}"}});
+    });
+
+    function check(){
+        var platform_id = $('#PlatformID').val(),
+        server_id = $('#ServerID').val(),
+        player_info = $('#player_info').val(),
+        title = $('#title').val(),
+        content = $('#content').val();
+        if(platform_id==''){
+            alert('请选择游戏平台');
+            return false;
+        }
+        if(server_id==''){
+            alert('请选择游戏服务器');
+            return false;
+        }
+        if(player_info==''){
+            alert('请输入角色ID或者角色名');
+            return false;
+        }
+        if(title==''){
+            alert('邮件标题不能为空');
+            return false;
+        }
+        if(content==''){
+            alert('邮件内容不能为空');
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

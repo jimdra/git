@@ -1,0 +1,58 @@
+<include file="Public:header" />
+<!--站点管理-->
+<div class="pad_lr_10">
+
+    <table width="100%" cellspacing="0" class="search_form">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="explain_col">
+                        <!--<a href="{:U('Slide/index')}" style="float:right;">{:L(gobacklist)}</a>-->
+{$slide[name]}{:L('operations_manage')} : <a href="{:U('Slide/picmanage?slide_id='.$slide[id])}">{:L('picmanage')}</a>  |  <a href="{:U('Slide/addpic?slide_id='.$slide[id])}">{:L(add_pic)}</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <div class="J_tablelist table_list">
+                <table width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th width="40"><input type="checkbox" name="checkall" class="J_checkall"></th>
+                            <th width="40">ID</th>
+                            <th>{:L('title')}</th>
+                            <th>{:L('thumb')}</th>
+                            <th>{:L('description')}</th>
+                            <th width=100>{:L('operations_manage')}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="list" id="val" >
+                        <tr>
+                            <td align="center"><input type="checkbox" class="J_checkitem" value="{$val.id}"></td>
+                            <td align="center">{$val.id}</td>
+                            <td align="center">{$val.title}</td>
+                            <td align="center"><img src="{$val['img']}" width="240"></td>
+                            <td align="center" style="overflow: hidden;">{$val.description}</td>
+                            <td align="center">
+                                <a href="{:U('Slide/editpic',array('id'=>$val['id']))}">{:L('edit')}</a> |
+                                <a href="javascript:;" class="J_confirmurl" data-uri="{:U('Slide/deletepic', array('id'=>$val['id']))}" data-msg="{:sprintf(L('confirm_delete_one'),$val['title'])}">{:L('delete')}</a>
+                            </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="btn_wrap_fixed">
+        <label class="select_all mr10"><input type="checkbox" name="checkall" class="J_checkall">{:L('select_all')}/{:L('cancel')}</label>
+        <input type="button" class="btn" data-tdtype="batch_action" data-acttype="ajax" data-uri="{:U('Slide/deletepic')}" data-name="id" data-msg="{:L('confirm_delete')}" value="{:L('delete')}" />
+        <div id="pages">{$page}</div>
+    </div>
+</div>
+<include file="Public:footer" />
+</body>
+</html>

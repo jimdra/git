@@ -1,0 +1,114 @@
+<include file="Public:header" />
+<!--站点管理-->
+<div class="pad_lr_10">
+    <form name="searchform" method="get" >
+        <table width="100%" cellspacing="0" class="search_form">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="explain_col">
+                            <input type="hidden" name="m" value="Admin" />
+                            <input type="hidden" name="c" value="Wechat" />
+                            <input type="hidden" name="a" value="menuList" />
+                            <input type="hidden" name="menuid" value="{$menuid}" />
+                            &nbsp;&nbsp;{:L('site_name')} :
+                            <select id="site_id" name="site_id">
+                                <option value="0">{:L('chose_site')}</option>
+                                <volist name="site_list" id="vo">
+                                    <option value="{$vo.site_id}" <if condition="$vo['site_id'] eq $search['site_id']">selected="selected"</if>>{$vo.site_name}</option>
+                                </volist>
+                            </select>
+                            <input type="submit" name="search" class="btn" value="{:L('search')}" />
+                            <input type="button" name="create" class="btn" onclick="createWxMenu()" value="{:L('createWxMenu')}" />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <div class="J_tablelist table_list">
+                <table width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th width="40">ID</th>
+                            <th>{:L('top_menu_name')}</th>
+                            <th>{:L('sub_menu_name')}</th>
+                            <th>{:L('menu_type')}</th>
+                            <th width="800">{:L('menu_param')}</th>
+                            <th>{:L('menu_sort')}</th>
+                            <th>{:L('menu_status')}</th>
+                            <th width=100>{:L('operations_manage')}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="list" id="val" >
+                        <tr>
+                            <td align="center">{$val.id}</td>
+                            <td align="center">{$val.menu_name}</td>
+                            <td align="center"></td>
+                            <td align="center"><if condition="$val.child eq ''">{$val.action}</if></td>
+                            <td align="center"><if condition="$val.child eq ''">{$val.action_param}</if></td>
+                            <td align="center">{$val.sort}</td>
+                            <td align="center"><if condition="$val.status eq 1">{:L('open')}<else/>{:L('close')}</if></td>
+                            <td align="center">
+                                <a href="javascript:;" class="J_showdialog" data-uri="{:U('Wechat/menu_edit',array('id'=>$val['id']))}" data-title="{:L('edit')} - {$val['menu_name']}" data-id="menu_edit" data-width="500" data-height="350">{:L('edit')}</a> |
+                                <a href="javascript:;" class="J_confirmurl" data-uri="{:U('Wechat/menu_delete', array('id'=>$val['id']))}" data-msg="{:sprintf(L('confirm_delete_one'),$val['menu_name'])}">{:L('delete')}</a>
+                            </td>
+                        </tr>
+                        <if condition="$val.child">
+                        <volist name="val.child" id="vo">
+                        <tr>
+                            <td align="center">{$vo.id}</td>
+                            <td align="center"></td>
+                            <td align="center">{$vo.menu_name}</td>
+                            <td align="center">{$vo.action}</td>
+                            <td align="center">{$vo.action_param}</td>
+                            <td align="center">{$vo.sort}</td>
+                            <td align="center"><if condition="$vo.status eq 1">{:L('open')}<else/>{:L('close')}</if></td>
+                            <td align="center">
+                                <a href="javascript:;" class="J_showdialog" data-uri="{:U('Wechat/menu_edit',array('id'=>$vo['id']))}" data-title="{:L('edit')} - {$vo['menu_name']}" data-id="menu_edit" data-width="500" data-height="350">{:L('edit')}</a> |
+                                <a href="javascript:;" class="J_confirmurl" data-uri="{:U('Wechat/menu_delete', array('id'=>$vo['id']))}" data-msg="{:sprintf(L('confirm_delete_one'),$vo['menu_name'])}">{:L('delete')}</a>
+                            </td>
+                        </tr>
+                        </volist>
+                        </if>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--<div class="btn_wrap_fixed">
+        <label class="select_all mr10"><input type="checkbox" name="checkall" class="J_checkall">{:L('select_all')}/{:L('cancel')}</label>
+        <input type="button" class="btn" data-tdtype="batch_action" data-acttype="ajax" data-uri="{:U('Wechat/delete')}" data-name="id" data-msg="{:L('confirm_delete')}" value="{:L('delete')}" />
+        <div id="pages">{$page}</div>
+    </div>-->
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+function createWxMenu() {
+    if (!confirm('慎重！确定要重新创建微信菜单？')) return;
+    var site_id = $("#site_id").val();
+    if (site_id==0) {
+        alert('请先选择站点');
+        return;
+    }
+    $.ajax({
+        type: "GET",
+        url: "{:U('Wechat/create')}",
+        data: {site_id:site_id},
+        dataType: "text",
+        success: function(msg){
+            if(msg == 'ok'){
+                alert('更新成功！！');
+            } else {
+                alert(msg);
+            }
+        }
+    });
+}
+</script>
+</body>
+</html>

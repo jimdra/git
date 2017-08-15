@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><if condition="$land_info['title']">{$land_info['title']}<else/>{$game_info['game_name']}</if></title>
+	<meta content="width=device-width,user-scalable=no" name="viewport">
+	<meta name="HandheldFriendly" content="true">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="https://cdn.qitiangame.com/landing/css/animate.css">
+	<script type="text/javascript" src="https://cdn.qitiangame.com/landing/js/zepto.min.js"></script>
+	<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+'" />')
+			var fz = document.documentElement.clientWidth / 10;
+			document.getElementsByTagName('html')[0].style.fontSize = fz + 'px';
+	</script>
+	<style>
+	a,button,input{outline:none;}
+	body, p, div, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form { margin: 0px; padding: 0px; list-style: outside none none; vertical-align: middle; }
+	body{max-width: 10.0rem;margin:0 auto;background:#020D4B;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+	.wamp{width: 10.0rem;position: relative;}
+	.warm img{width:100%;position: relative;float:left;}
+	.info{text-align: center;bottom: 2%;font-size:0.46875rem;color:#fff;background:#020D4B;padding-top: 10%;padding-bottom: 5%;}
+    a img{border:none;}
+    .footer{position: fixed;bottom: 0}
+	#allLink{display: none;position: absolute;z-index: 997;}
+	#hb{display:none;position:absolute; width: 7.0rem;height: 8.322581rem;left:15%;z-index: 999}
+	#hb1{width: 100%}
+	#btn2{position: absolute;top:6.451613rem;left: 1.564516rem;width:4.032258rem}
+	#btnclose{width: 1.290323rem;right: 0;top:0;position: absolute;display:block;}
+	#open{width: 100%;display: none;}
+	</style>
+</head>
+<body>
+	<if condition="$land_info.click_type eq 2">
+	<a id="allLink"></a>
+	</if>
+	<div class="warm">
+		<volist name="material" id="vo">
+		<if condition="in_array($i,$link)"><a></if>
+		<img src="{$vo.material_thumb}" width="100%" <if condition="$i eq 1">style="position:fixed;z-index:998;max-width:10.322581rem;"</if>>
+		<if condition="in_array($i,$link)"></a></if>
+		</volist>
+		<div style="clear:both"></div>
+		<p class="info" id="info">{$land_info['bottom_info']}</p>
+	</div>
+	<div id="hb">
+		<img src="https://leishenhuyu.com/landing/images/hb3.png" id="btnclose">
+		<img src="https://leishenhuyu.com/landing/images/hb1.png" id="hb1">
+		<img src="https://leishenhuyu.com/landing/images/hb4.png" id="btn2">	
+		<img src="https://leishenhuyu.com/landing/images/hb2.png" id="open">
+	</div>
+</body>
+</html>
+{$land_info['stat_js']}
+<script>
+	var land_id = "{$land_info['id']}";
+	var click_type = "{$land_info['click_type']}";
+	var url = 'https://admin.leishenhuyu.com';
+	window.onload = function(){
+		var APK = "{$land_info['android_down_url']}";		//Android下载链接
+		var IOS = "{$land_info['ios_down_url']}";		//IOS下载链接
+		var hbBtn;
+		var openBtn;
+		var hbbj;
+		var open;
+		function handle(){
+			this.a = document.getElementsByTagName('a');
+			this.allLink = document.getElementById('allLink');
+			this.hb = document.getElementById('hb');
+			hbbj = this.hbbj = document.getElementById('hb1');
+			hbBtn = this.hbBtn = document.getElementById('btn2');
+			open = this.openbj = document.getElementById("open");
+			this.btnclose = document.getElementById('btnclose');
+			this.info = document.getElementById('info');
+		} 
+		handle.prototype.init = function(){
+			if (click_type==2) {
+			this.allClient();  //全屏点击
+			}
+			this.autoShow();
+			this.log(land_id,1);
+			var show = this.showHb;
+			var hidden = this.hiddenHb;
+			var openPage = this.showOpen;
+			var downUrl = this.downUrl;
+			var log = this.log;
+			this.btnclose.onclick = function(){hidden()};  //关闭红包
+			hbBtn.onclick = function(){openPage()}  //打开红包
+			open.onclick = function(){downUrl();log(land_id,2)}	//领取红包
+			//点击显示红包
+			for(var i=0;i<this.a.length;i++){
+				this.a[i].onclick = function(){
+					if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {  //判断iPhone|iPad|iPod|iOS
+							window.location.href =IOS;   //iphone的下载链接
+						} else if (/(Android)/i.test(navigator.userAgent)) {   //判断Android
+							window.location.href =APK;   //Android的下载链接
+						}
+				};
+			}
+			this.info.style.top = document.body.scrollHeight +'px';
+		}
+		handle.prototype.allClient = function(){ 
+			this.allLink.style.display = 'block';
+			this.allLink.style.width = document.body.clientWidth+'px';
+			this.allLink.style.height = document.body.scrollHeight +'px';
+		}
+		handle.prototype.showHb = function(){
+			this.hb.style.display = "block";
+			this.hb.style.top = (document.body.scrollTop + document.documentElement.clientHeight/2) -260 +'px';
+			hbBtn.setAttribute("class","flipInY animated");
+			setTimeout(function(){
+				hbBtn.setAttribute("class","")
+			},1000)
+		};
+		handle.prototype.hiddenHb = function(){
+			this.hb.style.display = "none";
+		};
+		handle.prototype.showOpen = function(){
+			hbBtn.setAttribute("class","flipInY animated");
+			setTimeout(function(){
+				hbbj.style.display = "none";
+				open.style.display = "block";
+				hbBtn.style.display = "none";
+			},1000)
+		}
+		handle.prototype.downUrl = function(){
+			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {  //判断iPhone|iPad|iPod|iOS
+					window.location.href =IOS;   //iphone的下载链接
+				} else if (/(Android)/i.test(navigator.userAgent)) {   //判断Android
+					window.location.href =APK;   //Android的下载链接
+			} else {
+						if (IOS!='') {
+							window.location.href =IOS;
+						} else {
+							window.location.href =APK;
+						}
+					};
+		}
+		handle.prototype.autoShow = function(){
+			var hb = this.hb
+			var autoshowHb = this.showHb;
+			setTimeout(function(){
+				autoshowHb();
+			},3000)
+		}
+		handle.prototype.log = function(land_id,type_id){
+			$.ajax({
+				type: "GET",
+				url: url+'/index.php?m=Api&c=Land&a=land_log&land_id='+land_id+'&type='+type_id,
+				dataType: "jsonp",
+				jsonp: "callback",
+				success: function(data){
+					
+				}
+			});
+		}
+		var FN = new handle();
+		FN.init();
+	}
+</script>

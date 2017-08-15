@@ -1,0 +1,47 @@
+<?php
+
+return array(
+    'land_url'=>'落地页链接',
+    'game_name'=>'所属游戏',
+    'land_title'=>'广告名称',
+    'title'=>'对外名称',
+    'stat_time'=>'统计时间',
+    'visit_num'=>'访问次数',
+    'visit_num_ip'=>'独立IP访问次数',
+    'down_num'=>'下载次数',
+    'down_num_ip'=>'独立IP下载次数',
+    'export'=>'导出',
+    're_create'=>'重新生成',
+    'addtime'=>'添加时间',
+    'adduser'=>'操作人',
+    'theme'=>'使用模板',
+    'ios_down_url'=>'ios下载地址',
+    'android_down_url'=>'安卓下载地址',
+    'bottom_info'=>'底部信息',
+    'auto_jump'=>'自动跳转时间',
+    'stat_js'=>'统计代码',
+    'batch'=>'批量生成',
+    'no_auto'=>'不自动跳转',
+    'no_batch'=>'不批量生成',
+    'material'=>'素材库',
+    'chose_theme'=>'选择模板',
+    'chose_game'=>'选择游戏',
+    'click_type'=>'点击方式',
+    'button'=>'按钮点击',
+    'all_link'=>'全屏点击',
+    'recreate'=>'重新生成',
+    'host'=>'域名',
+    'is_default'=>'使用审核版本',
+    'copy'=>'复制',
+    'channel'=>'所属渠道',
+    'chose_channel'=>'选择渠道',
+
+    'js_land'=>array(
+        'game_id'=>'请选择游戏',
+        'land_title'=>'请输入广告名称',
+        'theme'=>'请选择模板',
+        'channel_id'=>'请选择渠道',
+    ),
+    
+);
+?>

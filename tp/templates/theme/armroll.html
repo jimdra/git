@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="UTF-8">
+	<title><if condition="$land_info['title']">{$land_info['title']}<else/>{$game_info['game_name']}</if></title>
+	<meta name="author" content="maiyongchao, ith5cn@163.com">
+	<meta content="width=device-width,user-scalable=no" name="viewport">
+	<meta name="HandheldFriendly" content="true">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="https://leishenhuyu.com/landing/css/swiper.min.css">
+	<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+dpr+',minimum-scale='+dpr+',maximum-scale='+dpr+'" />')
+			var fz = document.documentElement.clientWidth / 10;
+			document.getElementsByTagName('html')[0].style.fontSize = fz + 'px';
+	</script>
+	<style>
+		a,button,input{outline:none;}
+		body, p, div, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form { margin: 0px; padding: 0px; list-style: outside none none; vertical-align: middle; }
+		body{max-width: 10.0rem;margin:0 auto;background:#020D4B;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+		.wamp{width: 10.0rem;position: relative;}
+		img{width:100%;position: relative;float:left;}
+		.info{text-align: center;bottom: 2%;font-size:0.46875rem;color:#fff;background:#020D4B;padding-top: 10%;padding-bottom: 5%;}
+	    a img{border:none;}
+	    .footer{position: fixed;bottom: 0}
+		#allLink{display: none;position: absolute;z-index: 997;}
+		.banner{position:relative;}
+		.banner img:nth-child(1){position: absolute;z-index: 66;top: 0}
+		.swiper-container {
+        width: 100%;
+        height: 4.6875rem;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 67;
+        top:4.6875rem
+    	}
+    	    
+    .yu{position: relative;}
+	</style>
+</head>
+<body>
+		<if condition="$land_info.click_type eq 2">
+		<a id="allLink"></a>
+		</if>
+		<div class="warm">
+			<a><img src="{$material[0]['material_thumb']}" width="100%" style="position:fixed;z-index:998;max-width:10.322581rem;" id="firstimg"></a>
+		</div>
+		<div class="banner">
+			<img src="{$material[1]['material_thumb']}" width="100%">
+		    <div class="swiper-container">
+		        <div class="swiper-wrapper">
+					<volist name="material" id="vo" offset="2" length="4">
+		            <div class="swiper-slide"><img src="{$vo.material_thumb}" height="100%"></div>
+					</volist>
+		        </div>
+		    </div>
+		</div>
+		<div class="yu">
+			<volist name="material" id="vo" offset="6" length="10">
+			<a><img src="{$vo.material_thumb}" width="100%"></a>
+			</volist>
+			<p class="info" id="info">{$land_info['bottom_info']}</p>
+		</div>
+		    <script src="https://leishenhuyu.com/landing/js/swiper.min.js"></script>
+		    <script>
+		    	var mySwiper = new Swiper('.swiper-container',{
+					loop : true,
+					autoplay : 1500,
+					speed:300,
+					})
+		    </script>
+</body>
+</html>
+{$land_info['stat_js']}
+<script type="text/javascript" src="https://leishenhuyu.com/landing/js/jquery-2.1.4.min.js" ></script>
+<script>
+var land_id = "{$land_info['id']}";
+	var click_type = "{$land_info['click_type']}";
+	var url = 'https://admin.leishenhuyu.com';
+	window.onload = function(){
+		var APK = "{$land_info['android_down_url']}";		//Android下载链接
+		var IOS = "{$land_info['ios_down_url']}";		//IOS下载链接
+		var TIME = "{$land_info['auto_jump']}";			//延时秒数
+		function handle(){
+			this.bannerBox = document.getElementsByClassName('banner')[0]; //新加的
+			this.bannerA = document.getElementById('firstimg');  //新加的
+			this.bannerImg = document.getElementsByTagName('img')[0];
+			this.img = document.getElementsByTagName('img');
+			this.a = document.getElementsByTagName('a');
+			this.allLink = document.getElementById('allLink');
+			this.info = document.getElementById('info');
+			this.yu = document.getElementsByClassName('yu')[0];
+			this.banner = document.getElementsByTagName('img')[1];
+		} 
+		handle.prototype.init = function(){
+			if (click_type==2) {
+			this.allClient();  //全屏点击
+			}
+			this.clickLink(APK,IOS);
+			this.log(land_id,1);
+			this.setBannerTop();   //新加的
+			this.setYuTop();
+			if (TIME!=0) {
+			this.setTime(APK,IOS,TIME+'000');
+			}
+		}
+		handle.prototype.allClient = function(){ 
+			this.allLink.style.display = 'block';
+			this.allLink.style.width = document.body.clientWidth+'px';
+			this.allLink.style.height = document.body.scrollHeight +'px';
+			
+		}
+		handle.prototype.clickLink = function(apk,ios){
+			var _this = this;
+			for(var i=0;i<this.a.length;i++){
+				this.a[i].onclick = function()
+				{
+					_this.log(land_id,2);
+					if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {  //判断iPhone|iPad|iPod|iOS
+					    window.location.href =ios;   //iphone的下载链接
+					} else if (/(Android)/i.test(navigator.userAgent)) {   //判断Android
+					    window.location.href =apk;   //Android的下载链接
+					} else {
+						if (ios!='') {
+							window.location.href =ios;
+						} else {
+							window.location.href =apk;
+						}
+					};
+				}
+			}
+		}
+		handle.prototype.setTime = function(apk,ios,settime){
+		var _this = this;
+			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {  //判断iPhone|iPad|iPod|iOS
+				setTimeout(function(){
+					_this.log(land_id,2);
+					 window.location.href =ios;   //iphone的下载链接
+				},settime)
+			   
+			} else if (/(Android)/i.test(navigator.userAgent)) {   //判断Android
+				setTimeout(function(){
+					_this.log(land_id,2);	
+					  window.location.href =apk;   //Android的下载链接
+				},settime)
+			} else {
+				setTimeout(function(){
+					_this.log(land_id,2);	
+					if (ios!='') {
+						window.location.href =ios;
+					} else {
+						window.location.href =apk;
+					}
+				},settime)
+			};
+		}
+		handle.prototype.setYuTop = function(){
+			this.yu.style.top = this.banner.offsetHeight+this.bannerA.offsetHeight+"px";//新加的
+		}
+		handle.prototype.setBannerTop = function(){ //新加的
+			this.bannerBox.style.top = this.bannerA.offsetHeight +'px';
+		}
+		handle.prototype.log = function(land_id,type_id){
+			$.ajax({
+				type: "GET",
+				url: url+'/index.php?m=Api&c=Land&a=land_log&land_id='+land_id+'&type='+type_id,
+				dataType: "jsonp",
+				jsonp: "callback",
+				success: function(data){
+					
+				}
+			});
+		}
+		var FN = new handle();
+		FN.init();
+	}
+</script>

@@ -1,0 +1,29 @@
+<include file="Public:header" />
+<!--栏目管理-->
+<div class="pad_lr_10">
+
+    <div class="textbox">
+        <div class="picbox" role="table">
+            <div class="J_tablelist table_list" data-acturi="{:U('Site/ajax_edit')}">
+                <table width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th width="40"><input type="checkbox" name="checkall" class="J_checkall"></th>
+                            <th width="40">catid</th>
+                            <th>{:L('catname')}</th>
+                            <th>{:L('catsite')}</th>
+                            <th>{:L('catdir')}</th>
+                            <th width=160>{:L('operations_manage')}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {$cate_list}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />
+</body>
+</html>

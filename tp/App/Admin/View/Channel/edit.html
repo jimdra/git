@@ -1,0 +1,43 @@
+<div class="dialog_content">
+    <form id="info_form" action="<if condition="$action_name=='add'">{:U('Channel/add')}<else />{:U('Channel/edit')}</if>" method="post">
+        <table width="100%" class="table_form">
+            
+            <tr>
+                <th>{:L('channel_name')} :</th>
+                <td><input type="text" name="channel_name" class="input-text" id="J_channel_name" value="{$info.channel_name}" ></td>
+            </tr>
+            <tr>
+                <th>{:L('platform')} :</th>
+                <td>
+                    <select style="clear:both;position: relative;width: 150px" name="platform_id" id="J_platform_id">
+                        <option value="0">{:L('chose_platform')}</option>
+                        <option value="1" <if condition="$info['platform_id'] eq 1">selected="selected"</if>>{:L('ios')}</option>
+                        <option value="2" <if condition="$info['platform_id'] eq 2">selected="selected"</if>>{:L('android')}</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <input type="hidden" name="channel_id" value="{$info.channel_id}" />
+    </form>
+</div>
+
+<script>
+        <volist name=":L('js_channel')" id="val">
+        lang.{$key} = "{$val}";
+        </volist>
+        $(function(){
+            $.formValidator.initConfig({formid:"info_form",autotip:true});
+            $("#J_channel_name").formValidator({ onshow:lang.channel_name, onfocus:lang.channel_name}).inputValidator({ min:2, max:100, onerror:lang.channel_name});
+            $("#J_platform_id").formValidator({ onshow:lang.platform_id, onfocus:lang.platform_id}).inputValidator({ min:1, max:5, onerror:lang.platform_id});
+            $('#info_form').ajaxForm({success:complate,dataType:'json'});
+            function complate(result){
+                if(result.status == 1){
+                    $.dialog.get(result.dialog).close();
+                    $.TP.tip({content:result.msg});
+                    window.location.reload();
+                } else {
+                    $.TP.tip({content:result.msg, icon:'alert'});
+                }
+            }
+        });
+</script>
